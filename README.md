@@ -1,6 +1,9 @@
-<img width="500" height="500" alt="Diseño sin título" src="https://github.com/user-attachments/assets/af01effb-5403-4ea5-914f-1153af2ebf86" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/af01effb-5403-4ea5-914f-1153af2ebf86" alt="Logo SICMA Profesional" width="350">
+</p>
 
 ---
+
 ## Índice
 1. Briefing
 2. Arquitectura del software
@@ -61,15 +64,21 @@ La web será accesible desde cualquier dispositivo con acceso a Internet a trav�
 
 El cliente se conecta desde un navegador al servidor donde se aloja la web de SICMA Profesional.
 
+*(Aquí se insertará el diagrama una vez subido a GitHub)*
+
 ### Mapa físico
 
 Existe un único servidor encargado del alojamiento de la página web.
+
+*(Aquí se insertará el mapa físico una vez subido a GitHub)*
 
 ### Mapa lógico
 
 La red sigue un modelo Cliente ↔ Servidor:
 
 Cliente (Navegador) → HTTP/HTTPS → Servidor Apache → Archivos Web
+
+*(Aquí se insertará el mapa lógico una vez subido a GitHub)*
 
 
 ## Web
@@ -128,4 +137,6 @@ La creación de esta página web permite a SICMA Profesional aumentar su visibil
 ## Bibliografía
 
 - Contenido original proporcionado por SICMA Profesional
+- Recursos de desarrollo web: HTML, CSS, JavaScript y Apache
+
 - Recursos de desarrollo web: HTML, CSS, JavaScript y Apache
