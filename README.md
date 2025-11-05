@@ -1,7 +1,5 @@
 <img width="500" height="500" alt="Diseño sin título" src="https://github.com/user-attachments/assets/af01effb-5403-4ea5-914f-1153af2ebf86" />
 
-# SICMA Profesional
-
 ## Índice
 1. Briefing
 2. Arquitectura del software
