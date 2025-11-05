@@ -68,16 +68,16 @@ El sistema se basa en una separación clara entre presentación, lógica y datos
 
 ## 5. Red
 
-### 5.1. Diagrama de la red
+#### Diagrama de la red
 Representa la interconexión entre el servidor web, el servidor de base de datos, los clientes y los equipos administrativos, asegurando una comunicación interna segura.
 
-### 5.2. Mapa físico
+#### Mapa físico
 Consta de los dispositivos y su ubicación real:
 - Router principal
 - Conexiones cableadas para los equipos internos
 - Servidor ubicado en una zona segura
 
-### 5.3. Mapa lógico
+#### Mapa lógico
 Estructura de la red interna:
 - Segmentación por subredes
 - Rango de direcciones IP definidas
@@ -87,18 +87,18 @@ Estructura de la red interna:
 
 ## 6. Web
 
-### 6.1. Diseño
+#### Diseño
 El diseño se basa en una estructura simple y accesible:
 - Colores neutros que transmiten limpieza
 - Menús claros y visibles
 - Interfaz intuitiva enfocada en la productividad
 
-### 6.2. Mockup
+#### Mockup
 Representación visual previa de la plataforma para definir:
 - Distribución de elementos
 - Pantallas de acceso, panel administrativo y tareas
 
-### 6.3. Mapa de navegabilidad
+#### Mapa de navegabilidad
 Flujo de navegación:
 - Ingreso al sistema → Panel de control
 - Gestión de empleados, tareas y ubicaciones
@@ -108,19 +108,19 @@ Flujo de navegación:
 
 ## 7. Servicios
 
-### 7.1. DNS
+#### DNS
 Configuración de un nombre de dominio interno para acceder al sistema de forma cómoda por parte de los empleados autorizados.
 
-### 7.2. DHCP
+#### DHCP
 Asignación automática de direcciones IP a los equipos conectados en la red.
 
-### 7.3. Apache
+#### Apache
 Servidor encargado de alojar y distribuir la página web SICMA al navegador del usuario.
 
-### 7.4. Firewall
+#### Firewall
 Reglas configuradas para permitir únicamente los puertos y conexiones requeridas por el servicio web, protegiendo contra accesos no autorizados.
 
-### 7.5. Copias de seguridad
+#### Copias de seguridad
 Copias periódicas de la base de datos con el fin de garantizar la integridad de la información ante cualquier fallo o incidente.
 
 ---
