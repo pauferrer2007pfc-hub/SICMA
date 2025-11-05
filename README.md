@@ -60,30 +60,27 @@ La plataforma se desarrolla mediante tecnologías web estándar:
 
 La web será accesible desde cualquier dispositivo con acceso a Internet a través del servidor web Apache.
 
-### Diagrama de la red
+#### Diagrama de la red
 
 El cliente se conecta desde un navegador al servidor donde se aloja la web de SICMA Profesional.
 
-*(Aquí se insertará el diagrama una vez subido a GitHub)*
 
-### Mapa físico
+#### Mapa físico
 
 Existe un único servidor encargado del alojamiento de la página web.
 
-*(Aquí se insertará el mapa físico una vez subido a GitHub)*
 
-### Mapa lógico
+#### Mapa lógico
 
 La red sigue un modelo Cliente ↔ Servidor:
 
 Cliente (Navegador) → HTTP/HTTPS → Servidor Apache → Archivos Web
 
-*(Aquí se insertará el mapa lógico una vez subido a GitHub)*
 
 
 ## Web
 
-### Diseño
+#### Diseño
 
 La web está estructurada mediante un menú principal con las siguientes secciones:
 
@@ -96,11 +93,11 @@ La web está estructurada mediante un menú principal con las siguientes seccion
 
 Las secciones presentan información directa y orientada al cliente para facilitar la solicitud de servicios.
 
-### Mockup
+#### Mockup
 
 La página principal incluye un mensaje de bienvenida, descripción de la empresa y acceso rápido a servicios y contacto.
 
-### Mapa de navegabilidad
+#### Mapa de navegabilidad
 
 Inicio → Presentación general  
 Sobre Nosotros → Historia, experiencia y valores  
@@ -112,19 +109,19 @@ Contacto → Teléfono, email y formulario para presupuesto
 
 ## Servicios
 
-### Limpieza de Comunidades
+#### Limpieza de Comunidades
 
 Mantenimiento constante de zonas comunes: portales, escaleras, ascensores y patios, incluyendo limpieza de cristales.
 
-### Limpieza de Oficinas
+#### Limpieza de Oficinas
 
 Mantenimiento diario y desinfección para mejorar el bienestar laboral y eliminar polvo, suciedad y gérmenes.
 
-### Limpieza de Colegios
+#### Limpieza de Colegios
 
 Servicio adaptado a centros educativos: aulas, zonas comunes y exteriores, asegurando higiene y salud de alumnos y personal.
 
-### Limpiezas Especiales
+#### Limpiezas Especiales
 
 Fin de obra, limpiezas profundas y tratamientos específicos para todo tipo de superficies y necesidades.
 
