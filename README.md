@@ -1,38 +1,48 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/af01effb-5403-4ea5-914f-1153af2ebf86" alt="Logo SICMA Profesional" width="350">
+  <img width="300" src="https://github.com/user-attachments/assets/af01effb-5403-4ea5-914f-1153af2ebf86" alt="Logo SICMA" />
 </p>
+
+# SICMA Profesional
+
+<details open>
+  <summary><strong>Índice</strong></summary>
+
+1. Briefing  
+2. Arquitectura del software  
+3. Tecnologías a utilizar  
+4. Red  
+   - Diagrama de la red  
+   - Mapa físico  
+   - Mapa lógico  
+5. Web  
+   - Diseño  
+   - Mockup  
+   - Mapa de navegabilidad  
+6. Servicios  
+   - Limpieza de Comunidades  
+   - Limpieza de Oficinas  
+   - Limpieza de Colegios  
+   - Limpiezas Especiales  
+7. Conclusiones  
+8. Bibliografía  
+
+</details>
 
 ---
 
-## Índice
-1. Briefing
-2. Arquitectura del software
-3. Tecnologías a utilizar
-4. Red
-   - Diagrama de la red
-   - Mapa físico
-   - Mapa lógico
-5. Web
-   - Diseño
-   - Mockup
-   - Mapa de navegabilidad
-6. Servicios
-   - Limpieza de Comunidades
-   - Limpieza de Oficinas
-   - Limpieza de Colegios
-   - Limpiezas Especiales
-7. Conclusiones
-8. Bibliografía
-
-
-## Briefing
+<details>
+  <summary><strong> Briefing</strong></summary>
 
 SICMA Profesional es una empresa de limpieza integral ubicada en Barcelona, que ofrece servicios para comunidades, oficinas, colegios y limpiezas especiales. Se enfoca en ofrecer calidad, confianza, detalle y soluciones adaptadas a las necesidades de cada cliente.
 
 El objetivo del proyecto es disponer de una plataforma web informativa que muestre los servicios, la experiencia de la empresa, ejemplos de trabajos realizados, comentarios de clientes y un apartado de contacto para solicitar presupuestos sin compromiso.
 
+</details>
 
-## Arquitectura del software
+---
+
+<details>
+  <summary><strong> Arquitectura del software</strong></summary>
 
 El software está compuesto por una página web informativa con las siguientes funciones principales:
 
@@ -44,96 +54,100 @@ El software está compuesto por una página web informativa con las siguientes f
 
 Esta arquitectura se basa en la interacción directa con el cliente y no depende de servicios externos para comentarios o datos dinámicos.
 
+</details>
 
-## Tecnologías a utilizar
+---
 
-La plataforma se desarrolla mediante tecnologías web estándar:
+<details>
+  <summary><strong> Tecnologías a utilizar</strong></summary>
 
-- **HTML5** → Estructura del contenido
-- **CSS3** → Estilos visuales
-- **JavaScript** → Interactividad básica en comentarios y navegación
-- **Apache** → Servidor web
-- **LocalStorage del navegador** → Almacenamiento temporal de comentarios
+- **HTML5** → Estructura del contenido  
+- **CSS3** → Estilos visuales  
+- **JavaScript** → Interactividad básica (comentarios)  
+- **Apache** → Servidor web  
+- **LocalStorage** → Guarda comentarios del usuario de forma local  
 
+</details>
 
-## Red
+---
 
-La web será accesible desde cualquier dispositivo con acceso a Internet a través del servidor web Apache.
+<details>
+  <summary><strong> Red</strong></summary>
 
-#### Diagrama de la red
-
+### Diagrama de la red  
 El cliente se conecta desde un navegador al servidor donde se aloja la web de SICMA Profesional.
 
-
-#### Mapa físico
-
+### Mapa físico  
 Existe un único servidor encargado del alojamiento de la página web.
 
-
-#### Mapa lógico
-
-La red sigue un modelo Cliente ↔ Servidor:
-
+### Mapa lógico  
+La red sigue un modelo Cliente ↔ Servidor:  
 Cliente (Navegador) → HTTP/HTTPS → Servidor Apache → Archivos Web
 
+</details>
 
+---
 
-## Web
+<details>
+  <summary><strong> Web</strong></summary>
 
-#### Diseño
-
+### Diseño  
 La web está estructurada mediante un menú principal con las siguientes secciones:
 
-- Inicio
-- Sobre Nosotros
-- Servicios
-- Galería
-- Comentarios
-- Contacto
+- Inicio  
+- Sobre Nosotros  
+- Servicios  
+- Galería  
+- Comentarios  
+- Contacto  
 
-Las secciones presentan información directa y orientada al cliente para facilitar la solicitud de servicios.
+### Mockup  
+La página principal incluye mensaje de bienvenida, información de la empresa, acceso rápido a servicios y contacto.
 
-#### Mockup
-
-La página principal incluye un mensaje de bienvenida, descripción de la empresa y acceso rápido a servicios y contacto.
-
-#### Mapa de navegabilidad
-
+### Mapa de navegabilidad  
 Inicio → Presentación general  
 Sobre Nosotros → Historia, experiencia y valores  
-Servicios → Detalles de los servicios ofrecidos  
-Galería → Imágenes de trabajos realizados  
-Comentarios → Opiniones de clientes (almacenadas localmente)  
-Contacto → Teléfono, email y formulario para presupuesto
+Servicios → Detalles de cada servicio  
+Galería → Trabajos realizados  
+Comentarios → Opiniones de clientes  
+Contacto → Formulario y datos de contacto  
 
+</details>
 
-## Servicios
+---
 
-#### Limpieza de Comunidades
+<details>
+  <summary><strong> Servicios</strong></summary>
 
-Mantenimiento constante de zonas comunes: portales, escaleras, ascensores y patios, incluyendo limpieza de cristales.
+ **Limpieza de Comunidades**  
+Mantenimiento de zonas comunes: portales, escaleras, ascensores y patios, incluyendo limpieza de cristales.  
 
-#### Limpieza de Oficinas
+ **Limpieza de Oficinas**  
+Mantenimiento diario y desinfección para mejorar el bienestar laboral.  
 
-Mantenimiento diario y desinfección para mejorar el bienestar laboral y eliminar polvo, suciedad y gérmenes.
+ **Limpieza de Colegios**  
+Servicio adaptado a centros educativos: aulas, zonas comunes, patios y baños.  
 
-#### Limpieza de Colegios
+ **Limpiezas Especiales**  
+Fin de obra, limpiezas profundas y tratamientos específicos para superficies.  
 
-Servicio adaptado a centros educativos: aulas, zonas comunes y exteriores, asegurando higiene y salud de alumnos y personal.
+</details>
 
-#### Limpiezas Especiales
+---
 
-Fin de obra, limpiezas profundas y tratamientos específicos para todo tipo de superficies y necesidades.
+<details>
+  <summary><strong> Conclusiones</strong></summary>
 
+La web permite aumentar la visibilidad digital de SICMA Profesional, mejorar la comunicación con los clientes y facilitar la solicitud de servicios. Su estructura clara la convierte en una herramienta clave para el crecimiento de la empresa.
 
-## Conclusiones
+</details>
 
-La creación de esta página web permite a SICMA Profesional aumentar su visibilidad digital, mejorar la comunicación con los clientes y ofrecer información clara y accesible sobre sus servicios. Con una estructura bien definida y contenido enfocado al usuario, la plataforma se convierte en una herramienta fundamental para el crecimiento de la empresa.
+---
 
+<details>
+  <summary><strong> Bibliografía</strong></summary>
 
-## Bibliografía
+- Contenido original proporcionado por SICMA Profesional  
+- Recursos web: HTML, CSS, JavaScript y Apache  
 
-- Contenido original proporcionado por SICMA Profesional
-- Recursos de desarrollo web: HTML, CSS, JavaScript y Apache
-
-- Recursos de desarrollo web: HTML, CSS, JavaScript y Apache
+</details>
