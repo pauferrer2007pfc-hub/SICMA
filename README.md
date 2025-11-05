@@ -82,3 +82,12 @@
 
 
 #### Copias de seguridad
+
+---
+
+## Conclusion
+
+---
+
+##Bibliografia
+
