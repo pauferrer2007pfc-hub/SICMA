@@ -1,6 +1,7 @@
 ## SICMA
 ---
 ### Briefing
+**
 ---
 ### Arquitectura del software
 ---
