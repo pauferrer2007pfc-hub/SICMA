@@ -1,6 +1,6 @@
-# 📘 Nombre del Proyecto
+# Nombre del Proyecto
 
-## 📑 Índice
+## Índice
 1. [Introducción](#introducción)
 2. [Briefing de ideas](#briefing-de-ideas)
 3. [Arquitectura del software](#arquitectura-del-software)
@@ -24,89 +24,75 @@
 
 ---
 
-## 🧩 Introducción
+## Introducción
 > ¿Qué estamos haciendo? ¿Cuál es el objetivo del proyecto? ¿A quién va dirigido?
 
 ---
 
-## 💡 Briefing de ideas
+## Briefing de ideas
 > Recopilación inicial: problemas detectados, propuesta de valor, funcionalidades clave...
 
 ---
 
-## 🏛️ Arquitectura del software
+## Arquitectura del software
 > Explica cómo se organiza el software: módulos, capas, patrones, comunicación entre partes…
 
-Puedes añadir un diagrama como:
-- Diagrama de bloques
-- Diagrama UML
-- Diagrama de flujo
+---
+
+## Tecnologías a utilizar
+> Lenguajes, frameworks, servidores, bases de datos, hardware…
 
 ---
 
-## 🛠️ Tecnologías a utilizar
-> Lenguajes, frameworks, servidores, bases de datos, hardware, etc.
+## Red
 
-Ejemplo:
-| Tecnología | Uso |
-|-----------|-----|
-| HTML/CSS/JS | Frontend |
-| PHP | Backend |
-| MySQL | Base de datos |
-| Apache | Servidor Web |
-
----
-
-## 🌐 Red
-
-### 📡 Diagrama de la red
+### Diagrama de la red
 > Topología, interconexiones, IPs generales
 
-### 🏗️ Mapa físico
+### Mapa físico
 > Cableado, dispositivos físicos, sala de servidores
 
-### 🗺️ Mapa lógico
+### Mapa lógico
 > Subredes, VLANs, direcciones IP detalladas
 
 ---
 
-## 🌍 Web
+## Web
 
-### 🎨 Diseño
+### Diseño
 > Principios de diseño, colores, tipografías…
 
-### 🖼️ Mockup
+### Mockup
 > Imágenes de prototipos (Figma, Adobe XD, etc.)
 
-### 🔗 Mapa de navegabilidad
+### Mapa de navegabilidad
 > Rutas, pantallas, flujo del usuario
 
 ---
 
-## ⚙️ Servicios
+## Servicios
 
-### 🔤 DNS
+### DNS
 > Estructura de dominio, registros
 
-### 🧩 DHCP
+### DHCP
 > Asignación de IPs y configuración
 
-### 🌍 Apache
+### Apache
 > Configuración del servidor, vhosts
 
-### 🔥 Firewall
+### Firewall
 > Políticas de seguridad, puertos
 
-### 💾 Copias de seguridad
+### Copias de seguridad
 > Frecuencia, herramientas, plan de recuperación
 
 ---
 
-## ✅ Conclusiones
-> Lo que se logró, qué mejoras futuras habría, conclusiones técnicas
+## Conclusiones
+> Lo que se logró, mejoras futuras, conclusiones técnicas
 
 ---
 
 ## 📚 Bibliografía
-> Fuentes consultadas, enlaces, normativa, manuales técnicos…
-
+> Fuentes consultadas
