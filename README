@@ -25,74 +25,74 @@
 ---
 
 ## Introducción
-> ¿Qué estamos haciendo? ¿Cuál es el objetivo del proyecto? ¿A quién va dirigido?
+(¿Qué estamos haciendo? ¿Cuál es el objetivo del proyecto? ¿A quién va dirigido?)
 
 ---
 
 ## Briefing de ideas
-> Recopilación inicial: problemas detectados, propuesta de valor, funcionalidades clave...
+(Problema detectado, propuesta de valor, funcionalidades principales…)
 
 ---
 
 ## Arquitectura del software
-> Explica cómo se organiza el software: módulos, capas, patrones, comunicación entre partes…
+(Organización del software, módulos, capas, comunicación interna…)
 
 ---
 
 ## Tecnologías a utilizar
-> Lenguajes, frameworks, servidores, bases de datos, hardware…
+(Lenguajes, frameworks, servidores, bases de datos, hardware…)
 
 ---
 
 ## Red
 
-#### Diagrama de la red
-> Topología, interconexiones, IPs generales
+### Diagrama de la red
+(Topología y conexiones generales)
 
-#### Mapa físico
-> Cableado, dispositivos físicos, sala de servidores
+### Mapa físico
+(Cableado, dispositivos físicos)
 
-#### Mapa lógico
-> Subredes, VLANs, direcciones IP detalladas
+### Mapa lógico
+(Subredes, VLANs, direcciones IP detalladas)
 
 ---
 
 ## Web
 
-#### Diseño
-> Principios de diseño, colores, tipografías…
+### Diseño
+(Paleta de colores, tipografía, estructura)
 
-#### Mockup
-> Imágenes de prototipos (Figma, Adobe XD, etc.)
+### Mockup
+(Prototipos de las pantallas)
 
-#### Mapa de navegabilidad
-> Rutas, pantallas, flujo del usuario
+### Mapa de navegabilidad
+(Flujos, rutas, interacción del usuario)
 
 ---
 
 ## Servicios
 
-#### DNS
-> Estructura de dominio, registros
+### DNS
+(Configuración y registros)
 
-#### DHCP
-> Asignación de IPs y configuración
+### DHCP
+(Asignación dinámica de IPs)
 
-#### Apache
-> Configuración del servidor, vhosts
+### Apache
+(Config. del servidor web)
 
-#### Firewall
-> Políticas de seguridad, puertos
+### Firewall
+(Reglas de seguridad)
 
-#### Copias de seguridad
-> Frecuencia, herramientas, plan de recuperación
+### Copias de seguridad
+(Procedimiento, frecuencia, herramientas)
 
 ---
 
 ## Conclusiones
-> Lo que se logró, mejoras futuras, conclusiones técnicas
+(Resumen de resultados, mejoras futuras)
 
 ---
 
 ## Bibliografía
-> Fuentes consultadas
+(Fuentes utilizadas)
