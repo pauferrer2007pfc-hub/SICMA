@@ -25,7 +25,7 @@
 ---
 
 ## Introducción
-En SICMA somos una empresa de limpieza integral en Barcelona con extensa experiencia. Ofrecemos servicios profesionales para comunidades, oficinas, colegios y mucho más.
+
 ---
 
 ## Briefing de ideas
