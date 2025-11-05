@@ -1,26 +1,26 @@
 # Nombre del Proyecto
 
 ## Índice
-1. [Introducción](#introducción)
-2. [Briefing de ideas](#briefing-de-ideas)
-3. [Arquitectura del software](#arquitectura-del-software)
-4. [Tecnologías a utilizar](#tecnologías-a-utilizar)
-5. [Red](#red)
-   - [Diagrama de la red](#diagrama-de-la-red)
-   - [Mapa físico](#mapa-físico)
-   - [Mapa lógico](#mapa-lógico)
-6. [Web](#web)
-   - [Diseño](#diseño)
-   - [Mockup](#mockup)
-   - [Mapa de navegabilidad](#mapa-de-navegabilidad)
-7. [Servicios](#servicios)
-   - [DNS](#dns)
-   - [DHCP](#dhcp)
-   - [Apache](#apache)
-   - [Firewall](#firewall)
-   - [Copias de seguridad](#copias-de-seguridad)
-8. [Conclusiones](#conclusiones)
-9. [Bibliografía](#bibliografía)
+1. Introducción
+2. Briefing de ideas
+3. Arquitectura del software
+4. Tecnologías a utilizar
+5. Red
+   - Diagrama de la red
+   - Mapa físico
+   - Mapa lógico
+6. Web
+   - Diseño
+   - Mockup
+   - Mapa de navegabilidad
+7. Servicios
+   - DNS
+   - DHCP
+   - Apache
+   - Firewall
+   - Copias de seguridad
+8. Conclusiones
+9. Bibliografía
 
 ---
 
@@ -46,45 +46,45 @@
 
 ## Red
 
-### Diagrama de la red
+#### Diagrama de la red
 > Topología, interconexiones, IPs generales
 
-### Mapa físico
+#### Mapa físico
 > Cableado, dispositivos físicos, sala de servidores
 
-### Mapa lógico
+#### Mapa lógico
 > Subredes, VLANs, direcciones IP detalladas
 
 ---
 
 ## Web
 
-### Diseño
+#### Diseño
 > Principios de diseño, colores, tipografías…
 
-### Mockup
+#### Mockup
 > Imágenes de prototipos (Figma, Adobe XD, etc.)
 
-### Mapa de navegabilidad
+#### Mapa de navegabilidad
 > Rutas, pantallas, flujo del usuario
 
 ---
 
 ## Servicios
 
-### DNS
+#### DNS
 > Estructura de dominio, registros
 
-### DHCP
+#### DHCP
 > Asignación de IPs y configuración
 
-### Apache
+#### Apache
 > Configuración del servidor, vhosts
 
-### Firewall
+#### Firewall
 > Políticas de seguridad, puertos
 
-### Copias de seguridad
+#### Copias de seguridad
 > Frecuencia, herramientas, plan de recuperación
 
 ---
@@ -94,5 +94,5 @@
 
 ---
 
-## 📚 Bibliografía
+## Bibliografía
 > Fuentes consultadas
