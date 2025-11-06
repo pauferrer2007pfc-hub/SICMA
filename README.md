@@ -117,18 +117,11 @@ Contacto → Formulario y datos de contacto
 
 <details>
   <summary><strong> Servicios</strong></summary>
-
- **Limpieza de Comunidades**  
-Mantenimiento de zonas comunes: portales, escaleras, ascensores y patios, incluyendo limpieza de cristales.  
-
- **Limpieza de Oficinas**  
-Mantenimiento diario y desinfección para mejorar el bienestar laboral.  
-
- **Limpieza de Colegios**  
-Servicio adaptado a centros educativos: aulas, zonas comunes, patios y baños.  
-
- **Limpiezas Especiales**  
-Fin de obra, limpiezas profundas y tratamientos específicos para superficies.  
+**DNS**
+**DHCP**
+**Apache**
+**Firewall**
+**Copias de seguridad** 
 
 </details>
 
@@ -137,7 +130,7 @@ Fin de obra, limpiezas profundas y tratamientos específicos para superficies.
 <details>
   <summary><strong> Conclusiones</strong></summary>
 
-La web permite aumentar la visibilidad digital de SICMA Profesional, mejorar la comunicación con los clientes y facilitar la solicitud de servicios. Su estructura clara la convierte en una herramienta clave para el crecimiento de la empresa.
+La web permite aumentar la visibilidad digital de SICMA Profesional, mejorar la comunicación con los clientes y facilitar la solicitud de servicios.
 
 </details>
 
@@ -146,7 +139,5 @@ La web permite aumentar la visibilidad digital de SICMA Profesional, mejorar la 
 <details>
   <summary><strong> Bibliografía</strong></summary>
 
-- Contenido original proporcionado por SICMA Profesional  
-- Recursos web: HTML, CSS, JavaScript y Apache  
 
 </details>
