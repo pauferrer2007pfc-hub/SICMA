@@ -4,8 +4,7 @@
 
 # SICMA Profesional
 
-<details open>
-  <summary><strong>Índice</strong></summary>
+## Índice
 
 1. Briefing  
 2. Arquitectura del software  
@@ -72,15 +71,15 @@ Esta arquitectura se basa en la interacción directa con el cliente y no depende
 ---
 
 <details>
-  <summary><strong> Red</strong></summary>
+  <summary><strong>Red</strong></summary>
 
-### Diagrama de la red  
+#### Diagrama de la red  
 El cliente se conecta desde un navegador al servidor donde se aloja la web de SICMA Profesional.
 
-### Mapa físico  
+#### Mapa físico  
 Existe un único servidor encargado del alojamiento de la página web.
 
-### Mapa lógico  
+#### Mapa lógico  
 La red sigue un modelo Cliente ↔ Servidor:  
 Cliente (Navegador) → HTTP/HTTPS → Servidor Apache → Archivos Web
 
@@ -91,7 +90,7 @@ Cliente (Navegador) → HTTP/HTTPS → Servidor Apache → Archivos Web
 <details>
   <summary><strong> Web</strong></summary>
 
-### Diseño  
+#### Diseño  
 La web está estructurada mediante un menú principal con las siguientes secciones:
 
 - Inicio  
@@ -101,10 +100,10 @@ La web está estructurada mediante un menú principal con las siguientes seccion
 - Comentarios  
 - Contacto  
 
-### Mockup  
+#### Mockup  
 La página principal incluye mensaje de bienvenida, información de la empresa, acceso rápido a servicios y contacto.
 
-### Mapa de navegabilidad  
+#### Mapa de navegabilidad  
 Inicio → Presentación general  
 Sobre Nosotros → Historia, experiencia y valores  
 Servicios → Detalles de cada servicio  
