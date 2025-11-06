@@ -18,12 +18,12 @@
    - Mockup  
    - Mapa de navegabilidad  
 6. Servicios  
-   - Limpieza de Comunidades  
-   - Limpieza de Oficinas  
-   - Limpieza de Colegios  
-   - Limpiezas Especiales  
-7. Conclusiones  
-8. Bibliografía  
+   - DNS
+   - DHCP
+   - Apache
+   - Firewall
+8. Conclusiones  
+9. Bibliografía  
 
 </details>
 
