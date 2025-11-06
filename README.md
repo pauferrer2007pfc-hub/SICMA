@@ -34,6 +34,8 @@
 
 SICMA Profesional es una empresa de limpieza integral ubicada en Barcelona, que ofrece servicios para comunidades, oficinas, colegios y limpiezas especiales. Se enfoca en ofrecer calidad, confianza, detalle y soluciones adaptadas a las necesidades de cada cliente.
 
+Teniendo en cuenta que la empresa familiar cuenta con un sitio web poco profesional me he propuesto crear un sitio web con un estilo más moderno, eficiente ....
+
 El objetivo del proyecto es disponer de una plataforma web informativa que muestre los servicios, la experiencia de la empresa, ejemplos de trabajos realizados, comentarios de clientes y un apartado de contacto para solicitar presupuestos sin compromiso.
 
 </details>
