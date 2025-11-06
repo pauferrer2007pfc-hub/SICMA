@@ -51,7 +51,6 @@ El software está compuesto por una página web informativa con las siguientes f
 - Comentarios almacenados en el navegador del usuario (localStorage)
 - Apartado de contacto con teléfono, email y formulario
 
-Esta arquitectura se basa en la interacción directa con el cliente y no depende de servicios externos para comentarios o datos dinámicos.
 
 </details>
 
