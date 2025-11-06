@@ -117,11 +117,17 @@ Contacto → Formulario y datos de contacto
 
 <details>
   <summary><strong> Servicios</strong></summary>
+  
 **DNS**
+
 **DHCP**
+
 **Apache**
+
 **Firewall**
+
 **Copias de seguridad** 
+
 
 </details>
 
