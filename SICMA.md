@@ -20,7 +20,6 @@
 6. Servicios  
    - DNS
    - DHCP
-   - Apache
    - Firewall
 8. Conclusiones  
 9. Bibliografía  
@@ -127,8 +126,6 @@ Contacto → Formulario y datos de contacto
 **DNS**
 
 **DHCP**
-
-**Apache**
 
 **Firewall**
 
