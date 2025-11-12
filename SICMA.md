@@ -65,11 +65,21 @@ El software está compuesto por una página web informativa con las siguientes f
 <details>
   <summary><strong> Tecnologías a utilizar</strong></summary>
 
+#### Web
 - **HTML5** → Estructura del contenido  
 - **CSS3** → Estilos visuales  
-- **JavaScript** → Interactividad básica (comentarios)  
-- **Apache** → Servidor web  
-- **LocalStorage** → Guarda comentarios del usuario de forma local  
+- **Apache** → Servidor web
+
+#### Base de Datos
+- **MySQL**
+- **phpMyAdmin**
+  
+#### DNS
+- **Pi-hole**
+  
+#### Backup
+- **Truenas**
+- **Rsync**
 
 </details>
 
