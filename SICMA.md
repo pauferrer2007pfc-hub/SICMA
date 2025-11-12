@@ -82,7 +82,7 @@ El software está compuesto por una página web informativa con las siguientes f
 - **Rsync**
 
 #### Firewall
-- **pfsense**
+- **pf sense**
 
 </details>
 
