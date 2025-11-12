@@ -41,6 +41,8 @@ El objetivo del proyecto es disponer de una plataforma web informativa que muest
 WEB actual:
 https://cys-sicma.com/
 
+**Que quiero mejorar**
+
 </details>
 
 ---
