@@ -66,9 +66,9 @@ El software está compuesto por una página web informativa con las siguientes f
   <summary><strong> Tecnologías a utilizar</strong></summary>
 
 #### Web
-- **HTML5** → Estructura del contenido  
-- **CSS3** → Estilos visuales  
-- **Apache** → Servidor web
+- **HTML5**
+- **CSS3** 
+- **Apache**
 
 #### Base de Datos
 - **MySQL**
@@ -80,6 +80,9 @@ El software está compuesto por una página web informativa con las siguientes f
 #### Backup
 - **Truenas**
 - **Rsync**
+
+#### Firewall
+- **pfsense**
 
 </details>
 
