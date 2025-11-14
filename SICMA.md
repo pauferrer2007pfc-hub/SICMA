@@ -99,7 +99,8 @@ El cliente se conecta desde un navegador al servidor donde se aloja la web de SI
 Existe un único servidor encargado del alojamiento de la página web.
 
 #### Mapa lógico  
-<img width="1740" height="366" alt="image" src="https://github.com/user-attachments/assets/b6fc5b99-228d-4745-aaff-12ed00f7ce4d" />
+<img width="1736" height="356" alt="image" src="https://github.com/user-attachments/assets/e1a1eb49-0438-46e6-8228-f96cdf13c6a0" />
+
 
 
 </details>
