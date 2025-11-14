@@ -99,8 +99,8 @@ El cliente se conecta desde un navegador al servidor donde se aloja la web de SI
 Existe un único servidor encargado del alojamiento de la página web.
 
 #### Mapa lógico  
-La red sigue un modelo Cliente ↔ Servidor:  
-Cliente (Navegador) → HTTP/HTTPS → Servidor Apache → Archivos Web
+<img width="1740" height="366" alt="image" src="https://github.com/user-attachments/assets/b6fc5b99-228d-4745-aaff-12ed00f7ce4d" />
+
 
 </details>
 
