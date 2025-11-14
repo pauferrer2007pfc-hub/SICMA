@@ -13,8 +13,7 @@
    - Diagrama de la red  
    - Mapa físico  
    - Mapa lógico  
-5. Web  
-   - Diseño  
+5. Web    
    - Mockup  
    - Mapa de navegabilidad  
 6. Servicios  
@@ -109,16 +108,7 @@ Cliente (Navegador) → HTTP/HTTPS → Servidor Apache → Archivos Web
 
 <details>
   <summary><strong> Web</strong></summary>
-
-#### Diseño  
-La web está estructurada mediante un menú principal con las siguientes secciones:
-
-- Inicio  
-- Sobre Nosotros  
-- Servicios  
-- Galería  
-- Comentarios  
-- Contacto  
+  
 
 #### Mockup  
 La página principal incluye mensaje de bienvenida, información de la empresa, acceso rápido a servicios y contacto.
