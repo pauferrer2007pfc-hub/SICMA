@@ -112,7 +112,22 @@ Existe un único servidor encargado del alojamiento de la página web.
   
 
 #### Mockup  
-La página principal incluye mensaje de bienvenida, información de la empresa, acceso rápido a servicios y contacto.
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/19ff836a-1595-4334-9085-f518a3a57552" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/cb2d4512-74ba-4b82-b9f4-a5199eef1e22" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/076f0519-086d-4a13-9867-4e7a681878f9" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/e7b8371f-766b-4acc-82c1-b68a622e1bbd" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/bc41a29e-b3aa-4006-bf8e-3c9fc400af1a" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/2764f7af-adef-4169-aa4b-4a68dc19f4b7" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/d23c5fe4-1584-4761-8af3-8d803f9c1f2e" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/235b4bd8-1020-423e-a1ae-35c06bcb710c" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/04edabc9-5ccb-4fc2-8d7e-6a367be8133e" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/dc345740-9641-4c26-81a5-02ea6fd91bf0" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/16679530-33bc-4b8a-aedb-b6f6257a1241" />
+
+
+
+
+
 
 
 </details>
