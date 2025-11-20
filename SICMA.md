@@ -112,34 +112,34 @@ Existe un único servidor encargado del alojamiento de la página web.
   
 
 #### Mockup  
-Sección: Inicio
+**Sección: Inicio**
 <p align="center"> <img width="300" src="https://github.com/user-attachments/assets/19ff836a-1595-4334-9085-f518a3a57552" /> <img width="300" src="https://github.com/user-attachments/assets/cb2d4512-74ba-4b82-b9f4-a5199eef1e22" /> </p>
 
-Navegabilidad:
+**Navegabilidad:**
 El usuario entra al sitio y ve un resumen de los servicios principales, información destacada y un botón de acción (Call to Action) que lo lleva a la sección de Servicios o Contacto.
 
-Sección: Servicios
+**Sección: Servicios**
 <p align="center"> <img width="300" src="https://github.com/user-attachments/assets/076f0519-086d-4a13-9867-4e7a681878f9" /> <img width="300" src="https://github.com/user-attachments/assets/e7b8371f-766b-4acc-82c1-b68a622e1bbd" /> <img width="300" src="https://github.com/user-attachments/assets/bc41a29e-b3aa-4006-bf8e-3c9fc400af1a" /> <p align="center"> <img width="300" src="https://github.com/user-attachments/assets/2764f7af-adef-4169-aa4b-4a68dc19f4b7" /> <img width="300" src="https://github.com/user-attachments/assets/d23c5fe4-1584-4761-8af3-8d803f9c1f2e" /> </p>
 
-Navegabilidad:
+**Navegabilidad:**
 Desde esta sección, el usuario puede ver todos los servicios disponibles y hacer clic en botones para acceder directamente al Contacto.
 
-Sección: Galería
+**Sección: Galería**
 <p align="center"> <img width="300" src="https://github.com/user-attachments/assets/235b4bd8-1020-423e-a1ae-35c06bcb710c" /> <img width="300" src="https://github.com/user-attachments/assets/04edabc9-5ccb-4fc2-8d7e-6a367be8133e" /> </p>
 
-Navegabilidad:
+**Navegabilidad:**
 Permite al usuario explorar trabajos anteriores. Cada imagen puede ampliarse o enlazarse con detalles del servicio correspondiente.
 
-Sección: Opiniones
+**Sección: Opiniones**
 <p align="center"> <img width="300" src="https://github.com/user-attachments/assets/dc345740-9641-4c26-81a5-02ea6fd91bf0" /> </p>
 
-Navegabilidad:
+**Navegabilidad:**
 Muestra los comentarios de clientes guardados en localStorage. Desde aquí, el usuario puede ir al Contacto para solicitar servicios, reforzando la confianza.
 
-Sección: Contacto
+**Sección: Contacto**
 <p align="center"> <img width="300" src="https://github.com/user-attachments/assets/16679530-33bc-4b8a-aedb-b6f6257a1241" /> </p>
 
-Navegabilidad:
+**Navegabilidad:**
 Formulario de contacto, teléfono y email. Botón de envío visible y claro. Desde aquí, el usuario puede completar la acción principal: solicitar un presupuesto.
 
 
