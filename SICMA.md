@@ -14,8 +14,7 @@
    - Mapa físico  
    - Mapa lógico  
 5. Web    
-   - Mockup  
-   - Mapa de navegabilidad  
+   - Mockup   
 6. Servicios  
    - DNS
    - DHCP
@@ -115,13 +114,6 @@ Existe un único servidor encargado del alojamiento de la página web.
 #### Mockup  
 La página principal incluye mensaje de bienvenida, información de la empresa, acceso rápido a servicios y contacto.
 
-#### Mapa de navegabilidad  
-Inicio → Presentación general  
-Sobre Nosotros → Historia, experiencia y valores  
-Servicios → Detalles de cada servicio  
-Galería → Trabajos realizados  
-Comentarios → Opiniones de clientes  
-Contacto → Formulario y datos de contacto  
 
 </details>
 
