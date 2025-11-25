@@ -10,9 +10,7 @@
 2. Arquitectura del software  
 3. Tecnologías a utilizar  
 4. Red  
-   - Diagrama de la red  
-   - Mapa físico  
-   - Mapa lógico  
+   - Diagrama de la red   
 5. Web    
    - Mockup   
 6. Servicios  
@@ -94,15 +92,6 @@ El software está compuesto por una página web informativa con las siguientes f
 
 #### Diagrama de la red  
 <img width="981" height="389" alt="image" src="https://github.com/user-attachments/assets/bb482165-c430-42f1-ba23-1400cda6f861" />
-
-
-#### Mapa físico  
-Existe un único servidor encargado del alojamiento de la página web.
-
-#### Mapa lógico  
-<img width="1738" height="362" alt="image" src="https://github.com/user-attachments/assets/eda9745e-af70-4746-80e2-9c3d7f469972" />
-
-
 
 
 </details>
