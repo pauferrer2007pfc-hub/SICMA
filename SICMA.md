@@ -127,7 +127,7 @@ Navegabilidad: Permite al usuario explorar trabajos anteriores. Cada imagen pued
 
 
 
-**Sección: Opiniones**
+**Sección: Testimonio**
 
 Navegabilidad: Muestra los comentarios de clientes guardados. Desde aquí, el usuario puede ir al Contacto para solicitar servicios y poner un comentario del servicio realizado.
 
