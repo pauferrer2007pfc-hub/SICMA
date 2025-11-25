@@ -92,7 +92,8 @@ El software está compuesto por una página web informativa con las siguientes f
   <summary><strong>Red</strong></summary>
 
 #### Diagrama de la red  
-El cliente se conecta desde un navegador al servidor donde se aloja la web de SICMA Profesional.
+<img width="981" height="389" alt="image" src="https://github.com/user-attachments/assets/bb482165-c430-42f1-ba23-1400cda6f861" />
+
 
 #### Mapa físico  
 Existe un único servidor encargado del alojamiento de la página web.
