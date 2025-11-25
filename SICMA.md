@@ -10,7 +10,7 @@
 2. Arquitectura del software  
 3. Tecnologías a utilizar  
 4. Red  
-   - Diagrama de la red   
+   - Diagrama de red   
 5. Web    
    - Mockup   
 6. Servicios  
@@ -39,6 +39,10 @@ WEB actual:
 https://cys-sicma.com/
 
 **Que quiero mejorar de la web**
+- Diseño
+- Información más resumida
+- Eliminar el mapa
+
 
 
 </details>
@@ -90,7 +94,7 @@ El software está compuesto por una página web informativa con las siguientes f
 <details>
   <summary><strong>Red</strong></summary>
 
-#### Diagrama de la red  
+#### Diagrama de red  
 <img width="981" height="389" alt="image" src="https://github.com/user-attachments/assets/bb482165-c430-42f1-ba23-1400cda6f861" />
 
 
