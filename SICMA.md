@@ -51,6 +51,7 @@ https://cys-sicma.com/
 
 <details>
   <summary><strong> Arquitectura del software</strong></summary>
+  
 Funcionalidades: 
 - El login/registro de los usuarios
 - Tipos de usuarios: clientes
