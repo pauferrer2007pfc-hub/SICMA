@@ -70,7 +70,6 @@ Funcionalidades:
 - **HTML5**
 - **CSS3** 
 - **Apache**
-- **WordPress**
 
 #### Base de Datos
 - **MySQL**
