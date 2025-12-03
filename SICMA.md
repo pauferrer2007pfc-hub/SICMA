@@ -98,7 +98,8 @@ Funcionalidades:
   <summary><strong>Red</strong></summary>
 
 #### Diagrama de red  
-<img width="981" height="389" alt="image" src="https://github.com/user-attachments/assets/bb482165-c430-42f1-ba23-1400cda6f861" />
+<img width="929" height="359" alt="image" src="https://github.com/user-attachments/assets/fdf91bfc-fad9-4460-afaf-b32d1aa5b022" />
+
 
 
 </details>
