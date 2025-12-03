@@ -40,8 +40,13 @@ https://cys-sicma.com/
 
 **Que quiero mejorar de la web**
 - Diseño
-- Información más resumida
+- Demasiado texto, resumir la información
 - Eliminar el mapa
+- Modificar la ubicación del contacto
+- Logo blanco sobre fondo oscuro
+- Scroll
+- Algunos botones no funcionan
+- Imágenes más atractivas y fotos con explicación de la limpieza
 
 
 
