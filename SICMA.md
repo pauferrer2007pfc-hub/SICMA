@@ -78,7 +78,7 @@ Funcionalidades:
 
 #### Base de Datos
 - **MySQL**
-- **phpMyAdmin**
+- **Workbench**
   
 #### DNS
 - **Pi-hole**
