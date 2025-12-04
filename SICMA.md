@@ -81,6 +81,11 @@ Funcionalidades:
 - **MySQL**
 - **Workbench**
   
+  La tabla marcada en rojo es el core de la base de datos que contiene toda la información de los servicios.
+  Las tablas marcadas en negro son las secundarias, son las que contienen la información del usuario (email, teléfono, contraseña), los comentarios asociados al usuario  
+<p align="center"> <img width="858" height="619" alt="image" src="https://github.com/user-attachments/assets/0dd771dc-1fd7-4b2e-9e92-11c8d1c60235" /> </p>
+
+  
 #### DNS
 - **Pi-hole**
   
