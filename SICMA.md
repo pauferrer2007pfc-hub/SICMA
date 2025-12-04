@@ -121,7 +121,7 @@ Navegabilidad: El usuario entra al sitio y ve un resumen de los servicios princi
 
 **Sección: Servicios**
 
-Navegabilidad:Desde esta sección, el usuario puede ver todos los servicios disponibles y un boton de acción para acceder directamente al Contacto.
+Navegabilidad: Desde esta sección, el usuario puede ver todos los servicios disponibles y un boton de acción para acceder directamente al Contacto.
 <p align="center"> <img width="300" src="https://github.com/user-attachments/assets/076f0519-086d-4a13-9867-4e7a681878f9" /> <img width="300" src="https://github.com/user-attachments/assets/e7b8371f-766b-4acc-82c1-b68a622e1bbd" /> <img width="300" src="https://github.com/user-attachments/assets/bc41a29e-b3aa-4006-bf8e-3c9fc400af1a" /> <p align="center"> <img width="300" src="https://github.com/user-attachments/assets/2764f7af-adef-4169-aa4b-4a68dc19f4b7" /> <img width="300" src="https://github.com/user-attachments/assets/d23c5fe4-1584-4761-8af3-8d803f9c1f2e" /> </p>
 
 
@@ -135,14 +135,14 @@ Navegabilidad: Permite al usuario explorar trabajos anteriores. Cada imagen pued
 
 **Sección: Testimonio**
 
-Navegabilidad: Muestra los comentarios de clientes guardados. Desde aquí, el usuario puede ir al Contacto para solicitar servicios y poner un comentario del servicio realizado.
+Navegabilidad: Muestra los comentarios de clientes guardados. Desde aquí, el usuario puede poner los comentario que quiera del servicio realizado.
 
 <p align="center"> <img width="300" src="https://github.com/user-attachments/assets/dc345740-9641-4c26-81a5-02ea6fd91bf0" /> </p>
 
 
 **Sección: Contacto**
 
-Navegabilidad: Formulario de contacto, teléfono y email con un botón de envío. Desde aquí, el usuario puede completar la acción principal: solicitar un presupuesto.
+Navegabilidad: Formulario de contacto. Desde aquí, el usuario puede solicitar un presupuesto.
 
 <p align="center"> <img width="300" src="https://github.com/user-attachments/assets/16679530-33bc-4b8a-aedb-b6f6257a1241" /> </p>
 
