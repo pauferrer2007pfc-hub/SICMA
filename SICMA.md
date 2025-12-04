@@ -44,7 +44,7 @@ https://cys-sicma.com/
 - Eliminar el mapa
 - Modificar la ubicación del contacto
 - Logo blanco sobre fondo oscuro
-- Scroll
+- Scroll automatico
 - Algunos botones no funcionan
 - Imágenes más atractivas y fotos con explicación de la limpieza
 
@@ -72,6 +72,7 @@ Funcionalidades:
   <summary><strong> Tecnologías a utilizar</strong></summary>
 
 #### Web
+- **PHP**
 - **HTML5**
 - **CSS3** 
 - **Apache**
