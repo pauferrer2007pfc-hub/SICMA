@@ -81,8 +81,7 @@ Funcionalidades:
 - **MySQL**
 - **Workbench**
   
-  La tabla marcada en rojo es el core de la base de datos que contiene toda la información de los servicios.
-  Las tablas marcadas en negro son las secundarias, son las que contienen la información del usuario (email, teléfono, contraseña), los comentarios asociados al usuario  
+El modelo se organiza en tres niveles de información. En el nivel principal se encuentra la tabla Servicios, que representa los servicios ofrecidos y constituye la base del sistema. En el nivel secundario está la tabla Usuario, que almacena los datos de las personas registradas y sirve como punto de conexión para otras entidades relacionadas. A partir de estas tablas derivan las entidades de interacción, como Comentario y Presupuesto, que también forman parte del nivel secundario y permiten registrar valoraciones, mensajes y solicitudes de presupuesto realizadas por los usuarios. Finalmente, la tabla User_has_Servicios cumple una función operativa, ya que actúa como puente entre Usuario y Servicios, estableciendo una relación de muchos a muchos y registrando los servicios asociados a cada usuario. Esta estructura organiza los datos de manera clara, separando lo esencial de lo complementario y permitiendo un flujo funcional entre las entidades.
 <p align="center"> <img width="858" height="619" alt="image" src="https://github.com/user-attachments/assets/0dd771dc-1fd7-4b2e-9e92-11c8d1c60235" /> </p>
 
   
