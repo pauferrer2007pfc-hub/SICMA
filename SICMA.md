@@ -71,13 +71,16 @@ Funcionalidades:
 <details>
   <summary><strong> Tecnologías a utilizar</strong></summary>
 
-#### Web
-- **PHP**
-- **HTML5**
-- **CSS3** 
+#### Web 
 - **Apache**
+- **Xampp**
+- **Wordpress**
+
+Descargué WordPress, lo copié en el disco C dentro de la carpeta de XAMPP, en htdocs, y descomprimí el archivo ZIP. Después habilité Apache y MySQL desde XAMPP; entré en phpMyAdmin, creé una base de datos llamada wordpress y un usuario llamado Pau, le asigné la contraseña slCKG/Ry@o.7* y habilité todos los privilegios. A continuación cambié el nombre de la carpeta wordpress a sicma y, dentro de esa carpeta, edité el archivo wp-config.php, donde configuré el nombre de la base de datos como wordpress, el usuario como root, sin contraseña, y el servidor como localhost. Luego escribí localhost/sicma en el navegador y comenzó el proceso de instalación y configuración de WordPress: elegí el idioma español, asigné como título del sitio SICMA, configuré el usuario root, la contraseña u3KZ8z4UIWq9jQtA^N y my correo electrónico (pauferrer2007.pfc@gmail.com).  Tras pulsar en instalar WordPress, accedí con el nombre de usuario y la contraseña. A partir de aquí comenzó el proceso de creación de la web, en el que, desde el escritorio, desactivé algunas opciones de pantalla para evitar distracciones y, posteriormente, me dirigí al apartado de Entradas, seleccioné Añadir entrada y añadí la información de la empresa.
+  
 
 #### Base de Datos
+- **Xampp**
 - **MySQL**
 - **Workbench**
   
