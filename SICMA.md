@@ -98,7 +98,6 @@ El modelo se organiza en tres niveles de información. En el nivel principal se 
   
 #### Backup
 - **Truenas**
-- **Rsync**
 
 #### Firewall
 - **pf sense**
@@ -111,7 +110,8 @@ El modelo se organiza en tres niveles de información. En el nivel principal se 
   <summary><strong>Red</strong></summary>
 
 #### Diagrama de red  
-<img width="929" height="359" alt="image" src="https://github.com/user-attachments/assets/fdf91bfc-fad9-4460-afaf-b32d1aa5b022" />
+<p align="center"> <img width="867" height="362" alt="image" src="https://github.com/user-attachments/assets/036a3240-fa6d-4769-adc8-7a89d94d61be" /> </p>
+
 
 
 
