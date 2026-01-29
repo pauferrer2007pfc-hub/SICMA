@@ -99,16 +99,16 @@ El modelo se organiza en **tres niveles** de información. En el nivel **princip
 A tener en cuenta:
 https://punkymo.gitbook.io/miwiki/virtualizacion/contenedores/pi-hole/instalando-pi-hole-en-debian
 
-1. No uso debian, sino Ubuntu Server
-2. Utilizó netplan
-3. No puedo usar RedNat, sin dos adaptadores de red: Puente y Red Interna
+1. No uso debian, sino Ubuntu Server.
+2. Utilizó netplan.
+3. No puedo usar RedNat, sin dos adaptadores de red: Puente y Red Interna.
 
-Adaptador 1 (enp0s3): Puente  - DHCP
+Adaptador 1 (enp0s3): Puente - DHCP
+
 Adaptador 2 (enp0s8): Red Interna - IP estática
+
 Que he hecho:
-1- Poner adaptador 1 en adaptador puente y adaptador 2 en red interna
-2- comando: sudo nano /etc/netplan/00-install-config.yaml
-   (sudo nano /etc/netplan/00-installer-config.yaml)
+Primero poner el adaptador 1 en adaptador puente y adaptador 2 en red interna. Despues configurar el netplan dentro de la maquina virtual utilizando el comando, **sudo nano /etc/netplan/00-installer-config.yaml**
 
 poner:
 <p align="center"> <img width="574" height="312" alt="image" src="https://github.com/user-attachments/assets/295d6eab-ce8e-45ff-a9d8-558921a8e5ae" /> </p>
@@ -116,10 +116,9 @@ poner:
 - Ctrl + O --> guardar
 - Ctrl + X --> salir
 
-3- Comando: sudo netplan apply y sudo netplan try para aplicar la configuración de netplan
-4- Comando: ip a para ver si me da ip
-5- Hacer ping con google para comprobar que tengo internet, comando: ping google.com 
-6- Instalar Pi-hole, comando: curl -sSL https://install.pi-hole | bash
+Despues utilizo los comando, **sudo netplan apply** y **sudo netplan try** para aplicar la configuración de netplan, acontinuacion **ip a** para comprobar si me da una ip fija. Despues hacer ping con google para comprobar que tengo internet, **ping google.com**.
+
+Por ultimo instalar y configurar Pi-hole, con el comando **curl -sSL https://install.pi-hole | bash** lo instalo.
 - seleccionar la interfaz de red (enp0s8)
 - seleccionar el servidor DNS google
 - dejar activado listas de bloqueo
@@ -128,7 +127,7 @@ poner:
 
 
 Incidencias:
-- El comando, sudo nano /etc/netplan/00-install-config.yaml lo escribí y configure mal. Y después lo puse otra vez pero escribiendo y configurandolo bien, entonces tenia 2 netplans, y la mv cojia la que estaba mal, entonces elimine.
+- El comando, sudo nano /etc/netplan/00-installer-config.yaml lo escribí y configure mal. Y después lo puse otra vez pero escribiendo y configurandolo bien, entonces tenia 2 netplans, y la mv cojia la que estaba mal, entonces tuve que elimine la la que estava mal.
   
 #### Backup
 - **Truenas**
