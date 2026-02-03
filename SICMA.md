@@ -143,7 +143,7 @@ Incidencias:
   <summary><strong>Red</strong></summary>
 
 #### Diagrama de red  
-<p align="center"> <img width="867" height="362" alt="image" src="https://github.com/user-attachments/assets/036a3240-fa6d-4769-adc8-7a89d94d61be" /> </p>
+<p align="center"> <img width="1289" height="469" alt="image" src="https://github.com/user-attachments/assets/582cea4e-5878-483a-b0f0-ec80374ee58a" /> </p>
 
 
 
