@@ -76,7 +76,67 @@ Funcionalidades:
 - **Xampp**
 - **Wordpress**
 
+**1. Instalación de Wordpress**
+
 Descargué WordPress desde wordpress.org y dirigindome a Get Wrdpress, al terminar la descarga lo guardo en el disco C dentro de la carpeta de XAMPP, en htdocs, y descomprimi el archivo ZIP. Después habilité Apache y MySQL desde XAMPP; entré en phpMyAdmin, creé una base de datos llamada wordpress y un usuario llamado Pau, le asigné la contraseña y habilité todos los privilegios. A continuación cambié el nombre de la carpeta wordpress a sicma y, dentro de esa carpeta, edité el archivo wp-config.php, donde configuré el nombre de la base de datos como wordpress, el usuario como root, sin contraseña, y el servidor como localhost. Luego escribí localhost/sicma en el navegador y comenzó el proceso de instalación y configuración de WordPress: elegí el idioma español, asigné como título del sitio SICMA, configuré el usuario root, la contraseña y my correo electrónico. Tras pulsar en instalar WordPress, accedí con el nombre de usuario y la contraseña. A partir de aquí comienza el proceso de creación de la web, en el que, desde el escritorio, desactivé algunas opciones de pantalla para evitar distracciones y, posteriormente, me dirigí al apartado de Entradas, seleccioné Añadir entrada y añadí la información de la empresa. A partir de  aquí comienzo con la edición de la web.
+
+**2. Servidor Apache**
+
+1. Instalación y Configuración Inicial de Apache
+Actualizar e instalar Apache:
+- Entrar como root: su -
+- Comandos: apt update y apt install apache2
+
+Gestionar el servicio:
+- Iniciar y habilitar: systemctl start apache2 y systemctl enable apache2
+- Verificar estado: systemctl status apache2
+
+Configuración de Red (Modo Puente): Cambiar el adaptador de la MV a Adaptador Puente. E identificar la nueva IP con el comando: ip a
+
+2. Conexión Remota vía SSH 
+Para evitar líos con el idioma del teclado en la MV y poder copiar/pegar comandos, conectamos el PC con la MV:
+- Instalar SSH en la MV: apt install ssh
+
+Conexión desde el CMD del PC:
+- Abre el Símbolo del sistema (CMD) en tu ordenador principal.
+- Escribe: ssh usuario@ip_de_la_mv
+A partir de aquí, puedo copiar los comandos y pegarlos directamente en la terminal.
+
+3. Preparación del Directorio
+Crear la carpeta del proyecto:
+- Entar en: cd /var/www
+- Crear la carpeta: mkdir sicma
+
+Gestión de Permisos:
+- Añadir mi usuario al grupo sudo: usermod -aG pau
+- Cambiar propietario a mi usuario: chown -R pau /var/www/sicma
+- Cambiar permisos a 755: chmod 755 sicma -R
+
+4. Configuración del Virtual Host (sicma.conf)
+Crear el archivo de configuración: sudo nano /etc/apache2/sites-available/sicma.conf
+Pegar la configuración básica:
+
+<VirtualHost *:80>
+   ServerName your_domain
+    ServerAlias www.your_domain
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/your_domain
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+6. Activación del Sitio y Verificación
+Habilitar/Deshabilitar sitios:
+- Activar sicma: sudo a2ensite sicma.conf
+- Desactivar el sitio por defecto: sudo a2dissite 000-default.conf
+
+Validar y Reiniciar:
+- Comprobar errores de sintaxis: sudo apache2ctl configtest
+- Aplicar cambios: sudo systemctl reload apache2
+
+Prueba Final:
+Crear un archivo de prueba: nano /var/www/sicma/index.html
+Acceder desde el navegador del PC usando la IP de la MV: http://ip_de_la_mv
   
 
 #### Base de Datos
@@ -84,8 +144,12 @@ Descargué WordPress desde wordpress.org y dirigindome a Get Wrdpress, al termin
 - **MySQL**
 - **Workbench**
 
+**1. Creación de la db**
+
 Para la creación la de la base de datos, habilité MySQL desde XAMPP; entré en Workbench y me dirigí al símbolo mas en MySQL connections, le llame por el nimbre de la empresa **SICMA** y puse el puerto que me habilitado el XAMPP **3307**. Ahora creo la base de datos atreves de comandos.
 <p align="center"> <img width="513" height="796" alt="image" src="https://github.com/user-attachments/assets/0a3f6962-6357-4bd5-ac69-9a5d65bed57f" /> </p>
+
+**2. Creación del diagrama de la db**
 
 Para la creacio del diagrama, se creó un nuevo modelo desde la opción File; New Model, añadiendo posteriormente un diagrama EER. A continuación, se fueron creando las distintas tablas del sistema utilizando la herramienta de añadir tabla, definiendo para cada una de ellas sus campos, tipos de datos y claves primarias.
 
@@ -131,6 +195,7 @@ Incidencias:
   
 #### Backup
 - **Truenas**
+- **Rsync**
 
 #### Firewall
 - **pf sense**
