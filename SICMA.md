@@ -60,7 +60,7 @@ https://cys-sicma.com/
 Funcionalidades: 
 - El login/registro de los usuarios
 - Tipos de usuarios: clientes
-- Administradores (yo, mi madre)
+- Administradores (yo)
 - Permitir que los usuarios puedan comentar y pedir presupuesto
 
 
