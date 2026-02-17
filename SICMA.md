@@ -119,14 +119,12 @@ Gestión de Permisos:
 Creao el archivo de configuración: sudo nano /etc/apache2/sites-available/sicma.conf
 Pegar la configuración básica:
 
-<VirtualHost *:80>
-   ServerName your_domain
-    ServerAlias www.your_domain
-    ServerAdmin webmaster@localhost
-    DocumentRoot /var/www/your_domain
-    ErrorLog ${APACHE_LOG_DIR}/error.log
-    CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>
+<p align="center"> <img width="1444" height="751" alt="image" src="https://github.com/user-attachments/assets/d337f450-6dc0-44a7-8985-fdb0455f3afc" /> </p>
+
+- ServerAdmin webmaster@localhost
+- ServerName your_domain
+- ServerAlias www.your_domain
+- DocumentRoot /var/www/your_domain
 
 5. Activación del Sitio y Verificación
 Habilitar y Deshabilitar sitios:
@@ -153,29 +151,23 @@ Ahora que el servidor es capaz de leer PHP, verifico que todo funcione dentro de
 
 Creación del archivo de prueba
 Estando como root.
-- Ejecuto: nano /var/www/sicma/info.php
+- Ejecuto: nano /var/www/sicma/index.php
 - Escribo el siguiente código:
 
-PHP
-<?php
-phpinfo();
-?>
+<p palign="center"> <img width="1208" height="104" alt="image" src="https://github.com/user-attachments/assets/38e1c9ef-c293-4a0e-842c-5672e9128fac" /> </p>
+
 
 - Guardo y cierro. Ahora abro mi navegador en el PC y accedo a: http://ip_de_la_mv. Si veo la tabla informativa de PHP, ¡el servidor está vivo!
 
-El conflicto de prioridad: index.html vs index.php
-Aquí noto un detalle: si en mi carpeta sicma tengo un index.html y un index.php, al entrar a http://ip_de_la_mv/ siempre me muestra el HTML. Esto pasa porque Apache, por defecto, le da prioridad a los archivos estáticos.
+El conflicto de prioridad: index.html vs index.php. Aquí noto un detalle: si en mi carpeta sicma tengo un index.html y un index.php, al entrar a la ip dela mv siempre me muestra el HTML. Esto pasa porque Apache, por defecto, le da prioridad a los archivos estáticos.
 
 - Para que mi servidor prefiera ejecutar PHP antes que mostrar HTML, modifico la configuración del módulo dir:
 - Abro el archivo de configuración: sudo nano /etc/apache2/mods-enabled/dir.conf
 - Muevo index.php al principio de la lista, justo después de DirectoryIndex:
 
-Apache
-<IfModule mod_dir.c>
-    DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
-</IfModule>
+<p palign="center"> <img width="1210" height="56" alt="image" src="https://github.com/user-attachments/assets/b8f11843-a0e5-42da-8298-b1f8b8d993c6" /> </p>
 
-- Guardo los cambios y reinicio Apache para que me haga caso: sudo systemctl reload apache2
+- Guardo los cambios y reinicio Apache para establecer los cambios: sudo systemctl reload apache2
   
 
 #### Base de Datos
