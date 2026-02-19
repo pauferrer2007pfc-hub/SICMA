@@ -213,7 +213,7 @@ poner:
 
 Despues utilizo los comando, **sudo netplan apply** y **sudo netplan try** para aplicar la configuración de netplan, acontinuacion **ip a** para comprobar si me da una ip fija. Despues hacer ping con google para comprobar que tengo internet, **ping google.com**.
 
-Por ultimo instalar y configurar Pi-hole, con el comando **curl -sSL https://install.pi-hole | bash** lo instalo.
+Por ultimo instalar y configurar Pi-hole, con el comando **curl -sSL https://install.pi-hole.net | bash**
 - seleccionar la interfaz de red (enp0s8)
 - seleccionar el servidor DNS google
 - dejar activado listas de bloqueo
