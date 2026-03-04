@@ -295,15 +295,77 @@ Navegabilidad: Formulario de contacto. Desde aquí, el usuario puede solicitar u
 <details>
   <summary><strong> Servicios</strong></summary>
   
+**Apache**
+
+1. ¿Qué función cumple exactamente este servicio dentro de la red?
+
+Aloja y sirve el sitio web de SICMA Profesional. Resuelve el problema de la presencia digital, permitiendo que los clientes accedan a la información y soliciten presupuestos desde cualquier navegador. Da servicio a los clientes externos (público) y administradores.
+
+2. ¿En qué equipo se instala y qué requisitos necesita?
+
+Incluye:
+
+SO: Debian.
+
+IP: IP estática (192.168.135.59).
+
+Recursos: 2 CPU, 2GB RAM, 20GB Disco.
+
+
+
+3. ¿Qué parámetros básicos debo configurar?
+
+4. ¿Cómo verifico que funciona correctamente?
+
+5. ¿Qué aspectos de seguridad debo revisar?
+
 **DNS**
+
+1. ¿Qué función cumple exactamente este servicio dentro de la red?
+
+2. ¿En qué equipo se instala y qué requisitos necesita?
+
+3. ¿Qué parámetros básicos debo configurar?
+
+4. ¿Cómo verifico que funciona correctamente?
+
+5. ¿Qué aspectos de seguridad debo revisar?
 
 **DHCP**
 
-**Apache**
+1. ¿Qué función cumple exactamente este servicio dentro de la red?
+
+2. ¿En qué equipo se instala y qué requisitos necesita?
+
+3. ¿Qué parámetros básicos debo configurar?
+
+4. ¿Cómo verifico que funciona correctamente?
+
+5. ¿Qué aspectos de seguridad debo revisar?
 
 **Firewall**
 
+1. ¿Qué función cumple exactamente este servicio dentro de la red?
+
+2. ¿En qué equipo se instala y qué requisitos necesita?
+
+3. ¿Qué parámetros básicos debo configurar?
+
+4. ¿Cómo verifico que funciona correctamente?
+
+5. ¿Qué aspectos de seguridad debo revisar?
+
 **Copias de seguridad** 
+
+1. ¿Qué función cumple exactamente este servicio dentro de la red?
+
+2. ¿En qué equipo se instala y qué requisitos necesita?
+
+3. ¿Qué parámetros básicos debo configurar?
+
+4. ¿Cómo verifico que funciona correctamente?
+
+5. ¿Qué aspectos de seguridad debo revisar?
 
 
 </details>
