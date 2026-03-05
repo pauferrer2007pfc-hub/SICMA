@@ -239,6 +239,9 @@ Incidencias:
   <summary><strong>Red</strong></summary>
 
 #### Diagrama de red  
+
+Este diagrama muestra una red empresarial protegida por un firewall pfSense que filtra el tráfico desde Internet hacia una LAN segmentada. En el interior, un servidor Pi-hole gestiona el DNS y DHCP, mientras que los servicios centrales de la web (Apache, WordPress) y la base de datos (MySQL) operan de forma interconectada. Finalmente, un nodo de TrueNAS garantiza la continuidad del negocio realizando copias de seguridad incrementales mediante Rsync.
+
 <p align="center"> <img width="1289" height="469" alt="image" src="https://github.com/user-attachments/assets/582cea4e-5878-483a-b0f0-ec80374ee58a" /> </p>
 
 
