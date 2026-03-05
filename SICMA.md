@@ -296,7 +296,7 @@ Navegabilidad: Formulario de contacto. Desde aquí, el usuario puede solicitar u
   <summary><strong> Servicios</strong></summary>
 
   
-**Apache**
+#### Apache
 
 1. ¿Qué función cumple exactamente este servicio dentro de la red?
 
@@ -336,7 +336,7 @@ Incluye:
 
 - UFW: sudo ufw allow 'Apache Full'.
 
-**DNS**
+#### DNS
 
 1. ¿Qué función cumple exactamente este servicio dentro de la red?
 
@@ -374,7 +374,7 @@ Incluye:
 
 - No exponer el puerto 53 a internet (solo red interna).
 
-**DHCP**
+#### DHCP
 
 1. ¿Qué función cumple exactamente este servicio dentro de la red?
 
@@ -406,7 +406,7 @@ Incluye:
 
 - Static Leases: Reservar IPs fijas por dirección MAC para los equipos críticos (como el servidor Apache).
 
-**Firewall**
+#### Firewall
 
 1. ¿Qué función cumple exactamente este servicio dentro de la red?
 
@@ -444,7 +444,7 @@ Incluye:
 
 - Acceso Remoto: Solo permitir el acceso a la interfaz de administración (WebGUI) desde la LAN, nunca desde la WAN.
 
-**Copias de seguridad** 
+#### Copias de seguridad
 
 1. ¿Qué función cumple exactamente este servicio dentro de la red?
 
