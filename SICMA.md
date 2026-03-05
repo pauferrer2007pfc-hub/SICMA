@@ -294,79 +294,187 @@ Navegabilidad: Formulario de contacto. Desde aquí, el usuario puede solicitar u
 
 <details>
   <summary><strong> Servicios</strong></summary>
+
   
 **Apache**
 
 1. ¿Qué función cumple exactamente este servicio dentro de la red?
 
-Aloja y sirve el sitio web de SICMA Profesional. Resuelve el problema de la presencia digital, permitiendo que los clientes accedan a la información y soliciten presupuestos desde cualquier navegador. Da servicio a los clientes externos (público) y administradores.
+- Aloja y sirve el sitio web de SICMA Profesional. Resuelve el problema de la presencia digital, permitiendo que los clientes accedan a la información y soliciten presupuestos desde cualquier navegador. Da servicio a los clientes externos (público) y administradores.
 
 2. ¿En qué equipo se instala y qué requisitos necesita?
 
 Incluye:
 
-SO: Debian.
+- SO: Debian.
 
-IP: IP estática (192.168.135.59).
+- IP: IP estática (192.168.135.59).
 
-Recursos: 2 CPU, 2GB RAM, 20GB Disco.
-
-
+- Recursos: 2 CPU, 2GB RAM, 20GB Disco.
 
 3. ¿Qué parámetros básicos debo configurar?
 
+- Puertos: 80 (HTTP), 443 (HTTPS) y 22 (TCP).
+
+- Directorio: /var/www/sicma.
+
+- Archivo principal: /etc/apache2/sites-available/sicma.conf.
+
 4. ¿Cómo verifico que funciona correctamente?
 
+- systemctl status apache2
+
+- Acceso desde el PC host escribiendo la IP de la MV en el navegador.
+
+- Logs en /var/log/apache2/error.log.
+
 5. ¿Qué aspectos de seguridad debo revisar?
+
+- Permisos 755: permite que el servidor web navegue por el directorio pero solo el administrador pueda crear o borrar carpetas..
+
+- Desactivar el listado de directorios (Options -Indexes).
+
+- UFW: sudo ufw allow 'Apache Full'.
 
 **DNS**
 
 1. ¿Qué función cumple exactamente este servicio dentro de la red?
 
+- Traducir nombres de dominio en direcciones IP. En mi red, resuelve el problema de la navegación lenta y la publicidad, además de permitir crear nombres locales para tus servidores.
+
 2. ¿En qué equipo se instala y qué requisitos necesita?
+
+Incluye:
+
+- SO: Ubuntu Server.
+
+- IP: Estática (192.168.1.134).
+
+- Recursos: 10096MB RAM, 15GB Disco.
 
 3. ¿Qué parámetros básicos debo configurar?
 
+- Puertos: 53 (DNS), 80 (Panel Web).
+
+- Configuración: Local DNS Records para apuntar sicma.com a mi IP local.
+
+- DNS de origen: Google (8.8.8.8).
+
 4. ¿Cómo verifico que funciona correctamente?
 
+- pihole status en la terminal.
+
+- Desde un cliente: nslookup sicma.com (debe devolver la IP de mi servidor).
+
+- Acceso al dashboard: http://<IP_PIHOLE>/admin.
+
 5. ¿Qué aspectos de seguridad debo revisar?
+
+- Cambiar contraseña del panel (pihole -a -p).
+
+- No exponer el puerto 53 a internet (solo red interna).
 
 **DHCP**
 
 1. ¿Qué función cumple exactamente este servicio dentro de la red?
 
+- Asigna automáticamente direcciones IP a los dispositivos de la red de SICMA. Resuelve el problema de tener que configurar manualmente cada ordenador o móvil que se conecte, evitando conflictos de IPs duplicadas.
+
 2. ¿En qué equipo se instala y qué requisitos necesita?
+
+- SO: Ubuntu Server (donde reside Pi-hole).
+
+- IP: La IP estática de mi servidor Pi-hole (192.168.1.134).
+
+- Dependencias: El protocolo DHCP utiliza internamente dnsmasq (que ya viene dentro de Pi-hole).
 
 3. ¿Qué parámetros básicos debo configurar?
 
+- Puertos: 67 (servidor) y 68 (cliente) UDP.
+
+- Rango DHCP: Por ejemplo, de 192.168.1.50 a 192.168.1.150.
+
+- Gateway: La IP de mi pfSense.
+
 4. ¿Cómo verifico que funciona correctamente?
 
+- Prueba: Conectar un cliente nuevo y ejecutar ipconfig (Windows) o ip a (Linux) para ver si recibe IP del rango.
+
+- Panel: Revisar la sección "DHCP leases" en la interfaz web de Pi-hole.
+
 5. ¿Qué aspectos de seguridad debo revisar?
+
+- Static Leases: Reservar IPs fijas por dirección MAC para los equipos críticos (como el servidor Apache).
 
 **Firewall**
 
 1. ¿Qué función cumple exactamente este servicio dentro de la red?
 
+- Actúa como la primera línea de defensa. Filtra todo el tráfico que entra y sale de la empresa SICMA. Resuelve el problema de accesos no autorizados y ataques desde internet (WAN).
+
 2. ¿En qué equipo se instala y qué requisitos necesita?
+
+- SO: pfSense (basado en FreeBSD).
+
+- IP: Suele tener dos: la WAN (pública o del router) y la LAN (puerta de enlace, ej. 192.168.1.1).
+
+- Recursos: 2 CPUs, 2GB RAM, 2 tarjetas de red (mínimo).
 
 3. ¿Qué parámetros básicos debo configurar?
 
+- Reglas de Firewall: Definir qué puertos están abiertos (80, 443 para la web).
+
+- NAT / Port Forwarding: Redirigir el tráfico que llega a la IP pública hacia la IP interna de mi servidor Apache.
+
+- Interfaces: WAN (entrada de internet) y LAN (red local de la oficina).
+
 4. ¿Cómo verifico que funciona correctamente?
 
+- Comando: En el menú de pfSense, opción 8 (Shell) y usar pfctl -s rules para ver las reglas activas.
+
+- Prueba: Intentar acceder a un servicio bloqueado y verificar que la conexión es rechazada.
+
+- Logs: Revisar en la web: Status > System Logs > Firewall.
+
 5. ¿Qué aspectos de seguridad debo revisar?
+
+- Regla "Deny All" por defecto: Bloquear todo lo que no esté explícitamente permitido.
+
+- Anti-Spoofing: Evitar que alguien finja una IP interna desde fuera.
+
+- Acceso Remoto: Solo permitir el acceso a la interfaz de administración (WebGUI) desde la LAN, nunca desde la WAN.
 
 **Copias de seguridad** 
 
 1. ¿Qué función cumple exactamente este servicio dentro de la red?
 
+- TrueNAS: Gestiona el almacenamiento físico mediante el sistema de archivos ZFS, garantizando la integridad de los datos (evita que los archivos se corrompan).
+
+- Rsync: Realiza copias incrementales. Su función es sincronizar los archivos de la web y la base de datos desde el servidor Apache hacia el TrueNAS, transfiriendo solo los bloques de datos que han sido modificados
+
 2. ¿En qué equipo se instala y qué requisitos necesita?
+
+- SO: TrueNAS.
+
+- Protocolo: Rsync / SSH.
+
+- Recursos: 3099MB RAM, 3 Discos 16 GB.
 
 3. ¿Qué parámetros básicos debo configurar?
 
+- Puertos: SSH y Rsync.
+
+- Tarea: Programar una tarea diaria.
+
 4. ¿Cómo verifico que funciona correctamente?
+
+- Revisar el historial de tareas en el panel de TrueNAS.
+
+- Verificar que los archivos están físicamente en el pool de discos de respaldo.
 
 5. ¿Qué aspectos de seguridad debo revisar?
 
+- Uso de llaves SSH en lugar de contraseñas para la automatización.
 
 </details>
 
