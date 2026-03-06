@@ -71,18 +71,247 @@ Funcionalidades:
 <details>
   <summary><strong> Tecnologías a utilizar</strong></summary>
 
-#### Web 
-- **Apache**
-- **Xampp**
-- **Wordpress**
+#### 1. Gestión de Servidores
 
-**1. Instalación de Wordpress**
+- Apache: Es el servidor web encargado de recibir las peticiones de los usuarios (vía HTTP/HTTPS) y entregarles el contenido de la página.
 
-Descargué WordPress desde wordpress.org y dirigindome a Get Wrdpress, al terminar la descarga lo guardo en el disco C dentro de la carpeta de XAMPP, en htdocs, y descomprimi el archivo ZIP. Después habilité Apache y MySQL desde XAMPP; entré en phpMyAdmin, creé una base de datos llamada wordpress y un usuario llamado Pau, le asigné la contraseña y habilité todos los privilegios. A continuación cambié el nombre de la carpeta wordpress a sicma y, dentro de esa carpeta, edité el archivo wp-config.php, donde configuré el nombre de la base de datos como wordpress, el usuario como root, sin contraseña, y el servidor como localhost. Luego escribí localhost/sicma en el navegador y comenzó el proceso de instalación y configuración de WordPress: elegí el idioma español, asigné como título del sitio SICMA, configuré el usuario root, la contraseña y my correo electrónico. Tras pulsar en instalar WordPress, accedí con el nombre de usuario y la contraseña. A partir de aquí comienza el proceso de creación de la web, en el que, desde el escritorio, desactivé algunas opciones de pantalla para evitar distracciones y, posteriormente, me dirigí al apartado de Entradas, seleccioné Añadir entrada y añadí la información de la empresa. A partir de  aquí comienzo con la edición de la web.
+- PHP: Es el lenguaje de programación de lado del servidor. Se encarga de la lógica: procesar formularios, consultar la base de datos y generar el HTML dinámico.
 
-**2. Servidor Apache**
+- XAMPP: Es un paquete de software que agrupa Apache, MariaDB/MySQL y PHP, facilitando la creación de un entorno de servidor local para pruebas y desarrollo.
 
-Servidor Apache
+#### 2. Gestión de Contenidos y Diseño
+
+- WordPress: Es un Sistema de Gestión de Contenidos (CMS). Permite construir y administrar el sitio web de forma visual, gestionando desde el diseño hasta las entradas y comentarios sin escribir todo el código desde cero.
+
+- HTML: Es el lenguaje de marcado estándar que define la estructura y el esqueleto de tu sitio web. Se encarga de organizar el contenido en elementos como encabezados, párrafos, imágenes y enlaces para que el navegador sepa qué debe mostrar.
+
+- CSS: Es el lenguaje de diseño encargado de la apariencia visual. Define los colores, las fuentes, los espacios y la disposición de los elementos creados con HTML, permitiendo que la web de sea atractiva, moderna y adaptable a dispositivos móviles (responsive).
+
+#### 3. Bases de Datos
+
+- MySQL: Es el sistema de gestión de bases de datos relacionales donde se guarda toda la información estructurada: usuarios, textos de la web, configuraciones y mensajes.
+
+- MySQL Workbench: Es una herramienta visual para diseñadores y administradores de bases de datos que permite modelar, generar y gestionar esquemas de datos de forma gráfica.
+
+- phpMyAdmin: Es una herramienta de administración basada en web escrita en PHP que ofrece una interfaz gráfica para gestionar las bases de datos MySQL. Permite crear tablas, realizar consultas y gestionar permisos de forma visual y sencilla sin necesidad de escribir comandos SQL complejos en la terminal.
+
+#### 4. Servicios de Red e Infraestructura
+
+- Pi-hole: Funciona como un servidor DNS (traduce nombres de dominio a IPs) y DHCP (asigna IPs automáticamente), con la capacidad adicional de bloquear dominios de publicidad y rastreo a nivel de red.
+
+- Netplan: Es la utilidad de configuración de red en sistemas Linux (como Ubuntu) que permite definir de forma sencilla las interfaces de red e IPs estáticas mediante archivos YAML.
+
+- SSH: Protocolo de administración remota que permite acceder y controlar un servidor de forma segura a través de una terminal desde otro equipo.
+
+#### 5. Seguridad y copias
+
+- pfSense: Es un sistema operativo especializado que actúa como Firewall y enrutador. Su función es filtrar el tráfico de red, bloquear amenazas y gestionar la comunicación entre la red interna y el exterior.
+
+- TrueNAS: Es un sistema de almacenamiento conectado a red (NAS) diseñado para compartir archivos y, sobre todo, garantizar la seguridad de los datos mediante sistemas de archivos avanzados.
+
+- Rsync: Es una herramienta de software para la transferencia y sincronización eficiente de archivos, ideal para realizar copias de seguridad incrementales (solo copia lo que ha cambiado).
+
+</details>
+
+---
+
+<details>
+  <summary><strong>Red</strong></summary>
+
+#### Diagrama de red  
+
+Este diagrama muestra una red empresarial protegida por un firewall pfSense que filtra el tráfico desde Internet hacia una LAN segmentada. En el interior, un servidor Pi-hole gestiona el DNS y DHCP, mientras que los servicios centrales de la web (Apache, WordPress) y la base de datos (MySQL) operan de forma interconectada. Finalmente, un nodo de TrueNAS garantiza la continuidad del negocio realizando copias de seguridad incrementales mediante Rsync.
+
+<p align="center"> <img width="1289" height="469" alt="image" src="https://github.com/user-attachments/assets/582cea4e-5878-483a-b0f0-ec80374ee58a" /> </p>
+
+
+</details>
+
+---
+
+<details>
+  <summary><strong> Web</strong></summary>
+  
+
+#### Mockup  
+**Sección: Inicio**
+
+Navegabilidad: El usuario entra al sitio y ve un resumen de los servicios principales, información destacada y un botón de acción que lo lleva a la sección de Presupuesto.
+
+<p align="center"> <img width="300" src="https://github.com/user-attachments/assets/19ff836a-1595-4334-9085-f518a3a57552" /> <img width="300" src="https://github.com/user-attachments/assets/cb2d4512-74ba-4b82-b9f4-a5199eef1e22" /> </p>
+
+
+**Sección: Servicios**
+
+Navegabilidad: Desde esta sección, el usuario puede ver todos los servicios disponibles y un boton de acción para acceder directamente al Contacto.
+<p align="center"> <img width="300" src="https://github.com/user-attachments/assets/076f0519-086d-4a13-9867-4e7a681878f9" /> <img width="300" src="https://github.com/user-attachments/assets/e7b8371f-766b-4acc-82c1-b68a622e1bbd" /> <img width="300" src="https://github.com/user-attachments/assets/bc41a29e-b3aa-4006-bf8e-3c9fc400af1a" /> <p align="center"> <img width="300" src="https://github.com/user-attachments/assets/2764f7af-adef-4169-aa4b-4a68dc19f4b7" /> <img width="300" src="https://github.com/user-attachments/assets/d23c5fe4-1584-4761-8af3-8d803f9c1f2e" /> </p>
+
+
+**Sección: Galería**
+
+Navegabilidad: Permite al usuario explorar trabajos anteriores. Cada imagen puede ampliarse.
+
+<p align="center"> <img width="300" src="https://github.com/user-attachments/assets/235b4bd8-1020-423e-a1ae-35c06bcb710c" /> <img width="300" src="https://github.com/user-attachments/assets/04edabc9-5ccb-4fc2-8d7e-6a367be8133e" /> </p>
+
+
+
+**Sección: Testimonio**
+
+Navegabilidad: Muestra los comentarios de clientes guardados. Desde aquí, el usuario puede poner los comentario que quiera del servicio realizado.
+
+<p align="center"> <img width="300" src="https://github.com/user-attachments/assets/dc345740-9641-4c26-81a5-02ea6fd91bf0" /> </p>
+
+
+**Sección: Contacto**
+
+Navegabilidad: Formulario de contacto. Desde aquí, el usuario puede solicitar un presupuesto.
+
+<p align="center"> <img width="300" src="https://github.com/user-attachments/assets/16679530-33bc-4b8a-aedb-b6f6257a1241" /> </p>
+
+
+</details>
+
+---
+
+<details>
+  <summary><strong> Servicios</strong></summary>
+
+#### DNS
+
+1. ¿Qué función cumple exactamente este servicio dentro de la red?
+
+- Traducir nombres de dominio en direcciones IP. En mi red, resuelve el problema de la navegación lenta y la publicidad, además de permitir crear nombres locales para tus servidores.
+
+2. ¿En qué equipo se instala y qué requisitos necesita?
+
+Incluye:
+
+- SO: Ubuntu Server.
+
+- IP: Estática (192.168.1.134).
+
+- Recursos: 10096MB RAM, 15GB Disco.
+
+3. ¿Qué parámetros básicos debo configurar?
+
+- Puertos: 53 (DNS), 80 (Panel Web).
+
+- Configuración: Local DNS Records para apuntar sicma.com a mi IP local.
+
+- DNS de origen: Google (8.8.8.8).
+
+4. ¿Cómo verifico que funciona correctamente?
+
+- pihole status en la terminal.
+
+- Desde un cliente: nslookup sicma.com (debe devolver la IP de mi servidor).
+
+- Acceso al dashboard: http://<IP_PIHOLE>/admin.
+
+5. ¿Qué aspectos de seguridad debo revisar?
+
+- Cambiar contraseña del panel (pihole -a -p).
+
+- No exponer el puerto 53 a internet (solo red interna).
+
+6. Instalacion y configuracion
+
+Primero poner el adaptador 1 (enp0s3) en adaptador puente (DHCP) y adaptador 2 en red interna (IP estática). Despues configurar el netplan dentro de la maquina virtual utilizando el comando, **sudo nano /etc/netplan/00-installer-config.yaml**
+
+poner:
+<p align="center"> <img width="574" height="312" alt="image" src="https://github.com/user-attachments/assets/295d6eab-ce8e-45ff-a9d8-558921a8e5ae" /> </p>
+
+- Ctrl + O --> guardar
+- Ctrl + X --> salir
+
+Despues utilizo los comando, **sudo netplan apply** y **sudo netplan try** para aplicar la configuración de netplan, acontinuacion **ip a** para comprobar si me da una ip fija. Despues hacer ping con google para comprobar que tengo internet, **ping google.com**.
+
+Por ultimo instalar y configurar Pi-hole, con el comando **curl -sSL https://install.pi-hole.net | bash**
+- seleccionar la interfaz de red (enp0s8)
+- seleccionar el servidor DNS google
+- dejar activado listas de bloqueo
+- Web Admin Interface --> si
+- Web Server (lighttpd) --> si
+
+
+Incidencias:
+- El comando, sudo nano /etc/netplan/00-installer-config.yaml lo escribí y configure mal. Y después lo puse otra vez pero escribiendo y configurandolo bien, entonces tenia 2 netplans, y la mv cojia la que estaba mal, entonces tuve que elimine la la que estava mal.
+
+#### DHCP
+
+1. ¿Qué función cumple exactamente este servicio dentro de la red?
+
+- Asigna automáticamente direcciones IP a los dispositivos de la red de SICMA. Resuelve el problema de tener que configurar manualmente cada ordenador o móvil que se conecte, evitando conflictos de IPs duplicadas.
+
+2. ¿En qué equipo se instala y qué requisitos necesita?
+
+- SO: Ubuntu Server (donde reside Pi-hole).
+
+- IP: La IP estática de mi servidor Pi-hole (192.168.1.134).
+
+- Dependencias: El protocolo DHCP utiliza internamente dnsmasq (que ya viene dentro de Pi-hole).
+
+3. ¿Qué parámetros básicos debo configurar?
+
+- Puertos: 67 (servidor) y 68 (cliente) UDP.
+
+- Rango DHCP: Por ejemplo, de 192.168.1.50 a 192.168.1.150.
+
+- Gateway: La IP de mi pfSense.
+
+4. ¿Cómo verifico que funciona correctamente?
+
+- Prueba: Conectar un cliente nuevo y ejecutar ipconfig (Windows) o ip a (Linux) para ver si recibe IP del rango.
+
+- Panel: Revisar la sección "DHCP leases" en la interfaz web de Pi-hole.
+
+5. ¿Qué aspectos de seguridad debo revisar?
+
+- Static Leases: Reservar IPs fijas por dirección MAC para los equipos críticos (como el servidor Apache).
+
+#### Apache
+
+1. ¿Qué función cumple exactamente este servicio dentro de la red?
+
+- Aloja y sirve el sitio web de SICMA Profesional. Resuelve el problema de la presencia digital, permitiendo que los clientes accedan a la información y soliciten presupuestos desde cualquier navegador. Da servicio a los clientes externos (público) y administradores.
+
+2. ¿En qué equipo se instala y qué requisitos necesita?
+
+Incluye:
+
+- SO: Debian.
+
+- IP: IP estática (192.168.135.59).
+
+- Recursos: 2 CPU, 2GB RAM, 20GB Disco.
+
+3. ¿Qué parámetros básicos debo configurar?
+
+- Puertos: 80 (HTTP), 443 (HTTPS) y 22 (TCP).
+
+- Directorio: /var/www/sicma.
+
+- Archivo principal: /etc/apache2/sites-available/sicma.conf.
+
+4. ¿Cómo verifico que funciona correctamente?
+
+- systemctl status apache2
+
+- Acceso desde el PC host escribiendo la IP de la MV en el navegador.
+
+- Logs en /var/log/apache2/error.log.
+
+5. ¿Qué aspectos de seguridad debo revisar?
+
+- Permisos 755: permite que el servidor web navegue por el directorio pero solo el administrador pueda crear o borrar carpetas..
+
+- Desactivar el listado de directorios (Options -Indexes).
+
+- UFW: sudo ufw allow 'Apache Full'.
+
+6. Instalacion y configuracion
+
+**Servidor Apache**
 
 1. Instalación y Configuración Inicial de Apache
 Lo primero que hago es tomar el control como root para tener permisos totales. Actualizo los repositorios para asegurarme de que bajo las versiones más recientes y estables.
@@ -168,246 +397,6 @@ El conflicto de prioridad: index.html vs index.php. Aquí noto un detalle: si en
 <p palign="center"> <img width="1210" height="56" alt="image" src="https://github.com/user-attachments/assets/b8f11843-a0e5-42da-8298-b1f8b8d993c6" /> </p>
 
 - Guardo los cambios y reinicio Apache para establecer los cambios: sudo systemctl reload apache2
-  
-
-#### Base de Datos
-- **Xampp**
-- **MySQL**
-- **Workbench**
-
-**1. Creación de la db**
-
-Para la creación la de la base de datos, habilité MySQL desde XAMPP; entré en Workbench y me dirigí al símbolo mas en MySQL connections, le llame por el nimbre de la empresa **SICMA** y puse el puerto que me habilitado el XAMPP **3307**. Ahora creo la base de datos atreves de comandos.
-<p align="center"> <img width="513" height="796" alt="image" src="https://github.com/user-attachments/assets/0a3f6962-6357-4bd5-ac69-9a5d65bed57f" /> </p>
-
-**2. Creación del diagrama de la db**
-
-Para la creacio del diagrama, se creó un nuevo modelo desde la opción File; New Model, añadiendo posteriormente un diagrama EER. A continuación, se fueron creando las distintas tablas del sistema utilizando la herramienta de añadir tabla, definiendo para cada una de ellas sus campos, tipos de datos y claves primarias.
-
-El modelo se organiza en **tres niveles** de información. En el nivel **principal** se encuentra la tabla Servicios, que representa los servicios ofrecidos y constituye la base del sistema. En el nivel **secundario** está la tabla Usuario, que almacena los datos de las personas registradas y sirve como punto de conexión para otras entidades relacionadas. A partir de estas tablas derivan las entidades de interacción, como Comentario y Presupuesto, que también forman parte del nivel secundario y permiten registrar valoraciones, mensajes y solicitudes de presupuesto realizadas por los usuarios. Finalmente, la **función** que corresponde a la tabla User_has_Servicios cumple una función operativa, ya que actúa como puente entre Usuario y Servicios, estableciendo una relación de muchos a muchos y registrando los servicios asociados a cada usuario. Esta estructura organiza los datos de manera clara, separando lo esencial de lo complementario y permitiendo un flujo funcional entre las entidades.
-<p align="center"> <img width="858" height="619" alt="image" src="https://github.com/user-attachments/assets/0dd771dc-1fd7-4b2e-9e92-11c8d1c60235" /> </p>
-
-  
-#### DNS
-- **Pi-hole**
-
-A tener en cuenta:
-https://punkymo.gitbook.io/miwiki/virtualizacion/contenedores/pi-hole/instalando-pi-hole-en-debian
-
-1. No uso debian, sino Ubuntu Server.
-2. Utilizó netplan.
-3. No puedo usar RedNat, sin dos adaptadores de red: Puente y Red Interna.
-
-Adaptador 1 (enp0s3): Puente - DHCP
-
-Adaptador 2 (enp0s8): Red Interna - IP estática
-
-Que he hecho:
-Primero poner el adaptador 1 en adaptador puente y adaptador 2 en red interna. Despues configurar el netplan dentro de la maquina virtual utilizando el comando, **sudo nano /etc/netplan/00-installer-config.yaml**
-
-poner:
-<p align="center"> <img width="574" height="312" alt="image" src="https://github.com/user-attachments/assets/295d6eab-ce8e-45ff-a9d8-558921a8e5ae" /> </p>
-
-- Ctrl + O --> guardar
-- Ctrl + X --> salir
-
-Despues utilizo los comando, **sudo netplan apply** y **sudo netplan try** para aplicar la configuración de netplan, acontinuacion **ip a** para comprobar si me da una ip fija. Despues hacer ping con google para comprobar que tengo internet, **ping google.com**.
-
-Por ultimo instalar y configurar Pi-hole, con el comando **curl -sSL https://install.pi-hole.net | bash**
-- seleccionar la interfaz de red (enp0s8)
-- seleccionar el servidor DNS google
-- dejar activado listas de bloqueo
-- Web Admin Interface --> si
-- Web Server (lighttpd) --> si
-
-
-Incidencias:
-- El comando, sudo nano /etc/netplan/00-installer-config.yaml lo escribí y configure mal. Y después lo puse otra vez pero escribiendo y configurandolo bien, entonces tenia 2 netplans, y la mv cojia la que estaba mal, entonces tuve que elimine la la que estava mal.
-  
-#### Backup
-- **Truenas**
-- **Rsync**
-
-#### Firewall
-- **pf sense**
-
-</details>
-
----
-
-<details>
-  <summary><strong>Red</strong></summary>
-
-#### Diagrama de red  
-
-Este diagrama muestra una red empresarial protegida por un firewall pfSense que filtra el tráfico desde Internet hacia una LAN segmentada. En el interior, un servidor Pi-hole gestiona el DNS y DHCP, mientras que los servicios centrales de la web (Apache, WordPress) y la base de datos (MySQL) operan de forma interconectada. Finalmente, un nodo de TrueNAS garantiza la continuidad del negocio realizando copias de seguridad incrementales mediante Rsync.
-
-<p align="center"> <img width="1289" height="469" alt="image" src="https://github.com/user-attachments/assets/582cea4e-5878-483a-b0f0-ec80374ee58a" /> </p>
-
-
-
-
-</details>
-
----
-
-<details>
-  <summary><strong> Web</strong></summary>
-  
-
-#### Mockup  
-**Sección: Inicio**
-
-Navegabilidad: El usuario entra al sitio y ve un resumen de los servicios principales, información destacada y un botón de acción que lo lleva a la sección de Presupuesto.
-
-<p align="center"> <img width="300" src="https://github.com/user-attachments/assets/19ff836a-1595-4334-9085-f518a3a57552" /> <img width="300" src="https://github.com/user-attachments/assets/cb2d4512-74ba-4b82-b9f4-a5199eef1e22" /> </p>
-
-
-**Sección: Servicios**
-
-Navegabilidad: Desde esta sección, el usuario puede ver todos los servicios disponibles y un boton de acción para acceder directamente al Contacto.
-<p align="center"> <img width="300" src="https://github.com/user-attachments/assets/076f0519-086d-4a13-9867-4e7a681878f9" /> <img width="300" src="https://github.com/user-attachments/assets/e7b8371f-766b-4acc-82c1-b68a622e1bbd" /> <img width="300" src="https://github.com/user-attachments/assets/bc41a29e-b3aa-4006-bf8e-3c9fc400af1a" /> <p align="center"> <img width="300" src="https://github.com/user-attachments/assets/2764f7af-adef-4169-aa4b-4a68dc19f4b7" /> <img width="300" src="https://github.com/user-attachments/assets/d23c5fe4-1584-4761-8af3-8d803f9c1f2e" /> </p>
-
-
-**Sección: Galería**
-
-Navegabilidad: Permite al usuario explorar trabajos anteriores. Cada imagen puede ampliarse.
-
-<p align="center"> <img width="300" src="https://github.com/user-attachments/assets/235b4bd8-1020-423e-a1ae-35c06bcb710c" /> <img width="300" src="https://github.com/user-attachments/assets/04edabc9-5ccb-4fc2-8d7e-6a367be8133e" /> </p>
-
-
-
-**Sección: Testimonio**
-
-Navegabilidad: Muestra los comentarios de clientes guardados. Desde aquí, el usuario puede poner los comentario que quiera del servicio realizado.
-
-<p align="center"> <img width="300" src="https://github.com/user-attachments/assets/dc345740-9641-4c26-81a5-02ea6fd91bf0" /> </p>
-
-
-**Sección: Contacto**
-
-Navegabilidad: Formulario de contacto. Desde aquí, el usuario puede solicitar un presupuesto.
-
-<p align="center"> <img width="300" src="https://github.com/user-attachments/assets/16679530-33bc-4b8a-aedb-b6f6257a1241" /> </p>
-
-
-</details>
-
----
-
-<details>
-  <summary><strong> Servicios</strong></summary>
-
-  
-#### Apache
-
-1. ¿Qué función cumple exactamente este servicio dentro de la red?
-
-- Aloja y sirve el sitio web de SICMA Profesional. Resuelve el problema de la presencia digital, permitiendo que los clientes accedan a la información y soliciten presupuestos desde cualquier navegador. Da servicio a los clientes externos (público) y administradores.
-
-2. ¿En qué equipo se instala y qué requisitos necesita?
-
-Incluye:
-
-- SO: Debian.
-
-- IP: IP estática (192.168.135.59).
-
-- Recursos: 2 CPU, 2GB RAM, 20GB Disco.
-
-3. ¿Qué parámetros básicos debo configurar?
-
-- Puertos: 80 (HTTP), 443 (HTTPS) y 22 (TCP).
-
-- Directorio: /var/www/sicma.
-
-- Archivo principal: /etc/apache2/sites-available/sicma.conf.
-
-4. ¿Cómo verifico que funciona correctamente?
-
-- systemctl status apache2
-
-- Acceso desde el PC host escribiendo la IP de la MV en el navegador.
-
-- Logs en /var/log/apache2/error.log.
-
-5. ¿Qué aspectos de seguridad debo revisar?
-
-- Permisos 755: permite que el servidor web navegue por el directorio pero solo el administrador pueda crear o borrar carpetas..
-
-- Desactivar el listado de directorios (Options -Indexes).
-
-- UFW: sudo ufw allow 'Apache Full'.
-
-#### DNS
-
-1. ¿Qué función cumple exactamente este servicio dentro de la red?
-
-- Traducir nombres de dominio en direcciones IP. En mi red, resuelve el problema de la navegación lenta y la publicidad, además de permitir crear nombres locales para tus servidores.
-
-2. ¿En qué equipo se instala y qué requisitos necesita?
-
-Incluye:
-
-- SO: Ubuntu Server.
-
-- IP: Estática (192.168.1.134).
-
-- Recursos: 10096MB RAM, 15GB Disco.
-
-3. ¿Qué parámetros básicos debo configurar?
-
-- Puertos: 53 (DNS), 80 (Panel Web).
-
-- Configuración: Local DNS Records para apuntar sicma.com a mi IP local.
-
-- DNS de origen: Google (8.8.8.8).
-
-4. ¿Cómo verifico que funciona correctamente?
-
-- pihole status en la terminal.
-
-- Desde un cliente: nslookup sicma.com (debe devolver la IP de mi servidor).
-
-- Acceso al dashboard: http://<IP_PIHOLE>/admin.
-
-5. ¿Qué aspectos de seguridad debo revisar?
-
-- Cambiar contraseña del panel (pihole -a -p).
-
-- No exponer el puerto 53 a internet (solo red interna).
-
-#### DHCP
-
-1. ¿Qué función cumple exactamente este servicio dentro de la red?
-
-- Asigna automáticamente direcciones IP a los dispositivos de la red de SICMA. Resuelve el problema de tener que configurar manualmente cada ordenador o móvil que se conecte, evitando conflictos de IPs duplicadas.
-
-2. ¿En qué equipo se instala y qué requisitos necesita?
-
-- SO: Ubuntu Server (donde reside Pi-hole).
-
-- IP: La IP estática de mi servidor Pi-hole (192.168.1.134).
-
-- Dependencias: El protocolo DHCP utiliza internamente dnsmasq (que ya viene dentro de Pi-hole).
-
-3. ¿Qué parámetros básicos debo configurar?
-
-- Puertos: 67 (servidor) y 68 (cliente) UDP.
-
-- Rango DHCP: Por ejemplo, de 192.168.1.50 a 192.168.1.150.
-
-- Gateway: La IP de mi pfSense.
-
-4. ¿Cómo verifico que funciona correctamente?
-
-- Prueba: Conectar un cliente nuevo y ejecutar ipconfig (Windows) o ip a (Linux) para ver si recibe IP del rango.
-
-- Panel: Revisar la sección "DHCP leases" en la interfaz web de Pi-hole.
-
-5. ¿Qué aspectos de seguridad debo revisar?
-
-- Static Leases: Reservar IPs fijas por dirección MAC para los equipos críticos (como el servidor Apache).
 
 #### Firewall
 
@@ -478,6 +467,52 @@ Incluye:
 5. ¿Qué aspectos de seguridad debo revisar?
 
 - Uso de llaves SSH en lugar de contraseñas para la automatización.
+
+#### Bsade de Datos
+
+1. ¿Qué función cumple exactamente este servicio dentro de la red?
+
+- Almacena de forma estructurada toda la información dinámica de la web: datos de usuarios, comentarios de clientes y registros de presupuestos. Da servicio a la aplicación WordPress.
+   
+2. ¿En qué equipo se instala y qué requisitos necesita?
+
+- SO: Windows.
+
+- IP: Localhost (127.0.0.1).
+
+- Recursos: 1GB RAM.
+
+3. ¿Qué parámetros básicos debo configurar?
+
+- Puertos: 3307.
+
+- Base de datos: sicma.
+
+4. ¿Cómo verifico que funciona correctamente?
+
+- Entrar MySQL Workbench y ejecutar la db con las tablas.
+ 
+5. ¿Qué aspectos de seguridad debo revisar?
+
+- 
+   
+6. Instalacion y configuracion
+
+Para la creación la de la base de datos, habilité MySQL desde XAMPP; entré en Workbench y me dirigí al símbolo mas en MySQL connections, le llame por el nimbre de la empresa **SICMA** y puse el puerto que me habilitado el XAMPP **3307**. Ahora creo la base de datos atreves de comandos.
+<p align="center"> <img width="513" height="796" alt="image" src="https://github.com/user-attachments/assets/0a3f6962-6357-4bd5-ac69-9a5d65bed57f" /> </p>
+
+**2. Creación del diagrama de la db**
+
+Para la creacio del diagrama, se creó un nuevo modelo desde la opción File; New Model, añadiendo posteriormente un diagrama EER. A continuación, se fueron creando las distintas tablas del sistema utilizando la herramienta de añadir tabla, definiendo para cada una de ellas sus campos, tipos de datos y claves primarias.
+
+El modelo se organiza en **tres niveles** de información. En el nivel **principal** se encuentra la tabla Servicios, que representa los servicios ofrecidos y constituye la base del sistema. En el nivel **secundario** está la tabla Usuario, que almacena los datos de las personas registradas y sirve como punto de conexión para otras entidades relacionadas. A partir de estas tablas derivan las entidades de interacción, como Comentario y Presupuesto, que también forman parte del nivel secundario y permiten registrar valoraciones, mensajes y solicitudes de presupuesto realizadas por los usuarios. Finalmente, la **función** que corresponde a la tabla User_has_Servicios cumple una función operativa, ya que actúa como puente entre Usuario y Servicios, estableciendo una relación de muchos a muchos y registrando los servicios asociados a cada usuario. Esta estructura organiza los datos de manera clara, separando lo esencial de lo complementario y permitiendo un flujo funcional entre las entidades.
+<p align="center"> <img width="858" height="619" alt="image" src="https://github.com/user-attachments/assets/0dd771dc-1fd7-4b2e-9e92-11c8d1c60235" /> </p>
+
+**Wordpress**
+
+**1. Instalación de Wordpress**
+
+Descargué WordPress desde wordpress.org y dirigindome a Get Wrdpress, al terminar la descarga lo guardo en el disco C dentro de la carpeta de XAMPP, en htdocs, y descomprimi el archivo ZIP. Después habilité Apache y MySQL desde XAMPP; entré en phpMyAdmin, creé una base de datos llamada wordpress y un usuario llamado Pau, le asigné la contraseña y habilité todos los privilegios. A continuación cambié el nombre de la carpeta wordpress a sicma y, dentro de esa carpeta, edité el archivo wp-config.php, donde configuré el nombre de la base de datos como wordpress, el usuario como root, sin contraseña, y el servidor como localhost. Luego escribí localhost/sicma en el navegador y comenzó el proceso de instalación y configuración de WordPress: elegí el idioma español, asigné como título del sitio SICMA, configuré el usuario root, la contraseña y my correo electrónico. Tras pulsar en instalar WordPress, accedí con el nombre de usuario y la contraseña. A partir de aquí comienza el proceso de creación de la web, en el que, desde el escritorio, desactivé algunas opciones de pantalla para evitar distracciones y, posteriormente, me dirigí al apartado de Entradas, seleccioné Añadir entrada y añadí la información de la empresa. A partir de  aquí comienzo con la edición de la web.
 
 </details>
 
