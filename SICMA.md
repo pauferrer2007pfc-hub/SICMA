@@ -332,19 +332,20 @@ Incluye:
 
 6. Instalacion y configuracion
 
-1. Instalación y Configuración Inicial de Apache
 Lo primero que hago es tomar el control como root para tener permisos totales. Actualizo los repositorios para asegurarme de que bajo las versiones más recientes y estables.
 Entrar como root: su -
 Comandos: apt update y apt install apache2 para instalarlo.
 
 Gestionar el servicio:
+
 - Iniciar y habilitar: systemctl start apache2 y systemctl enable apache2
 - Verificar el estado: systemctl status apache2
 
 Configuración de Red (Modo Puente): Cambiar el adaptador de la MV a Adaptador Puente.
 - Identificar la nueva IP con el comando: ip a
 
-2. Conexión Remota vía SSH 
+Conexión Remota vía SSH:
+
 Para evitar líos con el idioma del teclado en la MV y poder copiar/pegar comandos, conectamos el PC con la MV:
 - Instalar SSH en la MV: apt install ssh
 
@@ -353,17 +354,18 @@ Conexión desde el CMD del PC:
 - Escribe: ssh usuario@ip_de_la_mv
 A partir de aquí, puedo copiar los comandos y pegarlos directamente en la terminal.
 
-3. Preparación del Directorio
-Creao la carpeta del proyecto:
-- Entar en: cd /var/www
-- Crear la carpeta: mkdir sicma
+Preparación del Directorio
+
+Crear la carpeta del proyecto:
+- Primero entar en /var/www utilizando el comando cd (cd /var/www) y luego se crea la carpeta con el comando mkdir sicma
 
 Gestión de Permisos:
+
 - Añadir mi usuario al grupo sudo: usermod -aG mi nombre
 - Cambiar propietario a mi usuario: chown -R nombre /var/www/sicma
 - Cambiar permisos a 755: chmod 755 sicma -R
 
-4. Configuración del Virtual Host (sicma.conf)
+Configuración del Virtual Host (sicma.conf)
 Creao el archivo de configuración: sudo nano /etc/apache2/sites-available/sicma.conf
 Pegar la configuración básica:
 
@@ -374,7 +376,8 @@ Pegar la configuración básica:
 - ServerAlias www.your_domain
 - DocumentRoot /var/www/your_domain
 
-5. Activación del Sitio y Verificación
+Activación del Sitio y Verificación
+
 Habilitar y Deshabilitar sitios:
 - Activar sicma: sudo a2ensite sicma.conf
 - Desactivar el sitio por defecto: sudo a2dissite 000-default.conf
@@ -387,14 +390,16 @@ Prueba Final:
 Creao un archivo de prueba: nano /var/www/sicma/index.html
 Acceder desde el navegador del PC usando la IP de la MV: http://ip_de_la_mv
 
-6. Instalación de PHP
+Instalación de PHP:
+
 - Instalo PHP y el módulo que lo conecta con Apache: sudo apt install php libapache2-mod-php.
 
 El problema de la prioridad
 Aquí es donde noto que, si tengo un index.html y un index.php juntos, el servidor siempre me muestra el HTML primero. Para cambiar esto, edito el archivo de prioridades: sudo nano /etc/apache2/mods-enabled/dir.conf.
 Modifico el orden para que index.php esté al principio de la lista. Guardo y reinicio con systemctl reload apache2. Ahora, mi servidor buscará primero la lógica de programación (PHP) antes que el contenido estático (HTML).
 
-7. Probar el procesamiento de PHP en su servidor web
+Probar el procesamiento de PHP en su servidor web:
+
 Ahora que el servidor es capaz de leer PHP, verifico que todo funcione dentro de mi carpeta de proyecto (sicma).
 
 Creación del archivo de prueba
