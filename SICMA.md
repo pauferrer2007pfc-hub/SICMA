@@ -12,7 +12,8 @@
 4. Red  
    - Diagrama de red   
 5. Web    
-   - Mockup   
+   - Mockup
+   - Base de datos 
 6. Servicios  
    - DNS
    - DHCP
@@ -168,6 +169,26 @@ Navegabilidad: Formulario de contacto. Desde aquí, el usuario puede solicitar u
 
 <p align="center"> <img width="300" src="https://github.com/user-attachments/assets/16679530-33bc-4b8a-aedb-b6f6257a1241" /> </p>
 
+
+#### Base de datos
+
+**DB**
+
+Para la creación la de la base de datos, habilité MySQL desde XAMPP; entré en Workbench y me dirigí al símbolo mas en MySQL connections, le llame por el nimbre de la empresa **SICMA** y puse el puerto que me habilitado el XAMPP **3307**. Ahora creo la base de datos atreves de comandos.
+<p align="center"> <img width="513" height="796" alt="image" src="https://github.com/user-attachments/assets/0a3f6962-6357-4bd5-ac69-9a5d65bed57f" /> </p>
+
+**Diagrama de la DB**
+
+Para la creacio del diagrama, se creó un nuevo modelo desde la opción File; New Model, añadiendo posteriormente un diagrama EER. A continuación, se fueron creando las distintas tablas del sistema utilizando la herramienta de añadir tabla, definiendo para cada una de ellas sus campos, tipos de datos y claves primarias.
+
+El modelo se organiza en **tres niveles** de información. En el nivel **principal** se encuentra la tabla Servicios, que representa los servicios ofrecidos y constituye la base del sistema. En el nivel **secundario** está la tabla Usuario, que almacena los datos de las personas registradas y sirve como punto de conexión para otras entidades relacionadas. A partir de estas tablas derivan las entidades de interacción, como Comentario y Presupuesto, que también forman parte del nivel secundario y permiten registrar valoraciones, mensajes y solicitudes de presupuesto realizadas por los usuarios. Finalmente, la **función** que corresponde a la tabla User_has_Servicios cumple una función operativa, ya que actúa como puente entre Usuario y Servicios, estableciendo una relación de muchos a muchos y registrando los servicios asociados a cada usuario. Esta estructura organiza los datos de manera clara, separando lo esencial de lo complementario y permitiendo un flujo funcional entre las entidades.
+<p align="center"> <img width="858" height="619" alt="image" src="https://github.com/user-attachments/assets/0dd771dc-1fd7-4b2e-9e92-11c8d1c60235" /> </p>
+
+#### Wordpress
+
+**Instalación**
+
+Descargué WordPress desde wordpress.org y dirigindome a Get Wrdpress, al terminar la descarga lo guardo en el disco C dentro de la carpeta de XAMPP, en htdocs, y descomprimi el archivo ZIP. Después habilité Apache y MySQL desde XAMPP; entré en phpMyAdmin, creé una base de datos llamada wordpress y un usuario, le asigné la contraseña y habilité todos los privilegios. A continuación cambié el nombre de la carpeta wordpress a sicma y, dentro de esa carpeta, edité el archivo wp-config.php, donde configuré el nombre de la base de datos como wordpress, el usuario como root, sin contraseña, y el servidor como localhost. Luego escribí localhost/sicma en el navegador y comenzó el proceso de instalación y configuración de WordPress: elegí el idioma español, asigné como título del sitio SICMA, configuré el usuario root, la contraseña y my correo electrónico. Tras pulsar en instalar WordPress, accedí con el nombre de usuario y la contraseña. A partir de aquí comienza el proceso de creación de la web, en el que, desde el escritorio, desactivé algunas opciones de pantalla para evitar distracciones y, posteriormente, me dirigí al apartado de Entradas, seleccioné Añadir entrada y añadí la información de la empresa. A partir de  aquí comienzo con la edición de la web.
 
 </details>
 
@@ -465,52 +486,6 @@ El conflicto de prioridad: index.html vs index.php. Aquí noto un detalle: si en
 5. ¿Qué aspectos de seguridad debo revisar?
 
 - Uso de llaves SSH en lugar de contraseñas para la automatización.
-
-#### Bsade de Datos
-
-1. ¿Qué función cumple exactamente este servicio dentro de la red?
-
-- Almacena de forma estructurada toda la información dinámica de la web: datos de usuarios, comentarios de clientes y registros de presupuestos. Da servicio a la aplicación WordPress.
-   
-2. ¿En qué equipo se instala y qué requisitos necesita?
-
-- SO: Windows.
-
-- IP: Localhost (127.0.0.1).
-
-- Recursos: 1GB RAM.
-
-3. ¿Qué parámetros básicos debo configurar?
-
-- Puertos: 3307.
-
-- Base de datos: sicma.
-
-4. ¿Cómo verifico que funciona correctamente?
-
-- Entrar MySQL Workbench y ejecutar la db con las tablas.
- 
-5. ¿Qué aspectos de seguridad debo revisar?
-
-- 
-   
-6. Instalacion y configuracion
-
-Para la creación la de la base de datos, habilité MySQL desde XAMPP; entré en Workbench y me dirigí al símbolo mas en MySQL connections, le llame por el nimbre de la empresa **SICMA** y puse el puerto que me habilitado el XAMPP **3307**. Ahora creo la base de datos atreves de comandos.
-<p align="center"> <img width="513" height="796" alt="image" src="https://github.com/user-attachments/assets/0a3f6962-6357-4bd5-ac69-9a5d65bed57f" /> </p>
-
-**2. Creación del diagrama de la db**
-
-Para la creacio del diagrama, se creó un nuevo modelo desde la opción File; New Model, añadiendo posteriormente un diagrama EER. A continuación, se fueron creando las distintas tablas del sistema utilizando la herramienta de añadir tabla, definiendo para cada una de ellas sus campos, tipos de datos y claves primarias.
-
-El modelo se organiza en **tres niveles** de información. En el nivel **principal** se encuentra la tabla Servicios, que representa los servicios ofrecidos y constituye la base del sistema. En el nivel **secundario** está la tabla Usuario, que almacena los datos de las personas registradas y sirve como punto de conexión para otras entidades relacionadas. A partir de estas tablas derivan las entidades de interacción, como Comentario y Presupuesto, que también forman parte del nivel secundario y permiten registrar valoraciones, mensajes y solicitudes de presupuesto realizadas por los usuarios. Finalmente, la **función** que corresponde a la tabla User_has_Servicios cumple una función operativa, ya que actúa como puente entre Usuario y Servicios, estableciendo una relación de muchos a muchos y registrando los servicios asociados a cada usuario. Esta estructura organiza los datos de manera clara, separando lo esencial de lo complementario y permitiendo un flujo funcional entre las entidades.
-<p align="center"> <img width="858" height="619" alt="image" src="https://github.com/user-attachments/assets/0dd771dc-1fd7-4b2e-9e92-11c8d1c60235" /> </p>
-
-**Wordpress**
-
-**1. Instalación de Wordpress**
-
-Descargué WordPress desde wordpress.org y dirigindome a Get Wrdpress, al terminar la descarga lo guardo en el disco C dentro de la carpeta de XAMPP, en htdocs, y descomprimi el archivo ZIP. Después habilité Apache y MySQL desde XAMPP; entré en phpMyAdmin, creé una base de datos llamada wordpress y un usuario, le asigné la contraseña y habilité todos los privilegios. A continuación cambié el nombre de la carpeta wordpress a sicma y, dentro de esa carpeta, edité el archivo wp-config.php, donde configuré el nombre de la base de datos como wordpress, el usuario como root, sin contraseña, y el servidor como localhost. Luego escribí localhost/sicma en el navegador y comenzó el proceso de instalación y configuración de WordPress: elegí el idioma español, asigné como título del sitio SICMA, configuré el usuario root, la contraseña y my correo electrónico. Tras pulsar en instalar WordPress, accedí con el nombre de usuario y la contraseña. A partir de aquí comienza el proceso de creación de la web, en el que, desde el escritorio, desactivé algunas opciones de pantalla para evitar distracciones y, posteriormente, me dirigí al apartado de Entradas, seleccioné Añadir entrada y añadí la información de la empresa. A partir de  aquí comienzo con la edición de la web.
 
 </details>
 
