@@ -448,7 +448,7 @@ El conflicto de prioridad: index.html vs index.php. Aquí noto un detalle: si en
 
 - Protocolo: Rsync / SSH.
 
-- Recursos: 3099MB RAM, 3 Discos 16 GB.
+- Recursos: 8000MB RAM, 3 Discos 16 GB.
 
 3. ¿Qué parámetros básicos debo configurar?
 
