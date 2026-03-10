@@ -311,8 +311,6 @@ Incluye:
 
 6. Instalacion y configuracion
 
-**Servidor Apache**
-
 1. Instalación y Configuración Inicial de Apache
 Lo primero que hago es tomar el control como root para tener permisos totales. Actualizo los repositorios para asegurarme de que bajo las versiones más recientes y estables.
 Entrar como root: su -
