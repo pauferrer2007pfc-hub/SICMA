@@ -508,5 +508,28 @@ La web permite aumentar la visibilidad digital de SICMA Profesional, mejorar la 
 <details>
   <summary><strong> Bibliografía</strong></summary>
 
+#### DNS
+
+https://punkymo.gitbook.io/miwiki/servicios/servidores-dns/dns-ubuntu-server-22.04
+
+#### DHCP
+
+https://punkymo.gitbook.io/miwiki/servicios/servidores-dhcp/dhcp-ubuntu-server-22.04
+
+#### Apache
+
+https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-es
+
+#### Firewall
+
+#### Copias de seguridad
+
+**Truenas**
+
+https://punkymo.gitbook.io/miwiki/seguridad/readme-1/truenas
+
+**Rcync en truenas**
+
+https://punkymo.gitbook.io/miwiki/seguridad/readme-1/truenas/rsync-en-truenas
 
 </details>
