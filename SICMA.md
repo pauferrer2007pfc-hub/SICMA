@@ -253,7 +253,7 @@ Por ultimo instalar y configurar Pi-hole, con el comando **curl -sSL https://ins
 - dejar activado listas de bloqueo
 - Web Admin Interface --> si
 - Web Server (lighttpd) --> si
--privacy mode a FTL --> 0. Show everything (que ya viene marcada por defecto)
+- privacy mode a FTL --> 0. Show everything (que ya viene marcada por defecto)
 
 Incidencias:
 - El comando, sudo nano /etc/netplan/00-installer-config.yaml lo escribí y configure mal. Y después lo puse otra vez pero escribiendo y configurandolo bien, entonces tenia 2 netplans, y la mv cojia la que estaba mal, entonces tuve que elimine la la que estava mal.
