@@ -237,7 +237,7 @@ Incluye:
 
 6. Instalacion y configuracion
 
-Primero poner el adaptador 1 (enp0s3) en adaptador puente (DHCP) y adaptador 2 en red interna (IP estática). Despues dentro de la mv instalar netplan con el comando **apt install netplan.io** y configurar el netplan utilizando el comando **sudo nano /etc/netplan/00-installer-config.yaml**
+Primero poner el adaptador 1 (enp0s3) en adaptador puente (DHCP) y adaptador 2 en red interna (IP estática). Despues dentro de la mv instalar netplan con el comando **apt install netplan.io** y para configurarlo ay que entrar como root escribiendo **sudo su**, ahora si se puede entrar al netplan utilizando el comando **sudo nano /etc/netplan/00-installer-config.yaml**
 
 poner:
 <p align="center"> <img width="574" height="312" alt="image" src="https://github.com/user-attachments/assets/295d6eab-ce8e-45ff-a9d8-558921a8e5ae" /> </p>
