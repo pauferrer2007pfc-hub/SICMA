@@ -209,7 +209,7 @@ Incluye:
 
 - SO: Ubuntu Server.
 
-- IP: Estática (192.168.1.134).
+- IP: Estática (192.168.135.47).
 
 - Recursos: 10096MB RAM, 15GB Disco.
 
