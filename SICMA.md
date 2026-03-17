@@ -235,7 +235,7 @@ Incluye:
 
 - No exponer el puerto 53 a internet (solo red interna).
 
-6. Instalacion y configuracion
+6. Instalación y configuración
 
 Primero poner el adaptador 1 (enp0s3) en adaptador puente (DHCP) y adaptador 2 en red interna (IP estática). Despues dentro de la mv instalar netplan con el comando **apt install netplan.io** y para configurarlo ay que entrar como root escribiendo **sudo su**, ahora si se puede entrar al netplan utilizando el comando **sudo nano /etc/netplan/00-installer-config.yaml**
 
@@ -330,9 +330,9 @@ Incluye:
 
 - UFW: sudo ufw allow 'Apache Full'.
 
-6. Instalacion y configuracion
+6. Instalación y configuración
 
-Lo primero que hago es tomar el control como root para tener permisos totales. Actualizo los repositorios para asegurarme de que bajo las versiones más recientes y estables.
+Lo primero que hago es tomar el control como root estando dentro de la mv para tener permisos totales. Actualizo los repositorios para asegurarme de que bajo las versiones más recientes y estables.
 Entrar como root: su -
 Comandos: apt update y apt install apache2 para instalarlo.
 
@@ -491,6 +491,84 @@ El conflicto de prioridad: index.html vs index.php. Aquí noto un detalle: si en
 5. ¿Qué aspectos de seguridad debo revisar?
 
 - Uso de llaves SSH en lugar de contraseñas para la automatización.
+
+6. Instalación y configuración
+
+Para enpezar inicio la mv con la imagen ISO de TrueNAS, y durante la instalación:
+
+- Selecciono uno de los discos para instalar el sistema operativo y dejo los otros dos discos sin asignar, ya que se utilizarán más adelante.
+
+- Elego el modo de arranque BIOS, ya que es compatible con la mayoría de placas base.
+
+- Al finalizar la instalación reinicio la máquina.
+
+- Importante: retirar la ISO del lector virtual antes de iniciar nuevamente.
+
+Acceso a la interfaz web:
+
+Una vez iniciado el sistema:
+
+- En el navegador del pc, introdusco la dirección IP mostrada en la máquina virtual.
+
+- Accedo con las credenciales:
+
+Usuario: truenas_admin
+
+Contraseña: 1234
+
+Configuración de TrueNAS
+
+Creación de usuario:
+
+Para crear un usuario debo dirigirme a Credentials → Users y hacer clic en Add (Agregar).
+
+En la ventana que aparece:
+
+- Definir el nombre de usuario y establecer una contraseña segura.
+
+- Guardar los cambios.
+
+Creación de un pool de almacenamiento
+
+Un pool permite organizar y gestionar los discos disponibles.
+
+Para hacer un pool debo dirigirme a Storage → Pools, crear un nuevo pool. 
+
+En la ventana que aparece:
+
+- Asignarle un nombre.
+
+- Seleccionar los dos discos libres.
+
+- Elegir la opción Mirror, esto crea una copia exacta de los datos en ambos discos (redundancia).
+
+- Confirmar la creación del pool.
+
+Creación de una tarea rsync
+
+Las tareas rsync permiten sincronizar datos entre sistemas o ubicaciones.
+
+Para crear una tarea rsync debo dirigirme a Data Protection → Rsync Tasks y hacer clic en Add (Agregar).
+
+Configurar los siguientes parámetros:
+
+- Path (ruta): conjunto de datos (dataset) de origen.
+
+- User (usuario): seleccionar la cuenta que ejecutará la tarea.
+
+- Direction (dirección): En mi caso e puesto Pull
+
+Push: envía datos desde TrueNAS hacia otro equipo.
+
+Pull: obtiene datos desde otro equipo hacia TrueNAS.
+
+- Schedule (programación): definir cuándo y con qué frecuencia se ejecutará la sincronización.
+
+- Remote Host (host remoto): introducir la dirección IP del equipo destino/origen.
+
+- Opciones adicionales: ajustar según necesidades (compresión, eliminación de archivos, etc.).
+
+- Guardar la tarea.
 
 </details>
 
